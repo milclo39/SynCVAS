@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132101,
+            "detail": "ROCHO VP1 POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "#PON"
+                }
+            ]
+        }
+    ]
+}

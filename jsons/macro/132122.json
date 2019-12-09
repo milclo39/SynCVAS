@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132122,
+            "detail": "RICHO VP3 POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\020100000003\\"
+                }
+            ]
+        }
+    ]
+}

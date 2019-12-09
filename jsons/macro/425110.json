@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425110,
+            "detail": "TASCAM SS CF切替",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\0A\\07F0100"
+                }
+            ]
+        }
+    ]
+}

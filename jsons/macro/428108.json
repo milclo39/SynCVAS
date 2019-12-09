@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428108,
+            "detail": "Panasonic BD シリアル 取出し",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:TRY"
+                }
+            ]
+        }
+    ]
+}

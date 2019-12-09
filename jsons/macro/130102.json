@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 130102,
+            "detail": "HITACHI VP POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\BEEF0306002AD3010000600000\\"
+                }
+            ]
+        }
+    ]
+}

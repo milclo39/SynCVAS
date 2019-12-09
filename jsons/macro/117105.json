@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 117105,
+            "detail": "CANON VP HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "INPUT=HDMI"
+                }
+            ]
+        }
+    ]
+}

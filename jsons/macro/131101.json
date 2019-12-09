@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 131101,
+            "detail": "MITSUBISHI VP POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "00!"
+                }
+            ]
+        }
+    ]
+}

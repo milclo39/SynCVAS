@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 114103,
+            "detail": "ELMO VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\BEEF0306006BD9010020300100\\"
+                }
+            ]
+        }
+    ]
+}

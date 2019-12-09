@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425109,
+            "detail": "TASCAM SS RECモード",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\0A\\01301"
+                }
+            ]
+        }
+    ]
+}

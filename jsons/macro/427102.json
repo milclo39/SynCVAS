@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 427102,
+            "detail": "PIONEER BD シリアル 停止",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "RJ"
+                }
+            ]
+        }
+    ]
+}

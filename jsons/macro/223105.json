@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 223105,
+            "detail": "SONY(モニター)  HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\8C00010244D3\\"
+                }
+            ]
+        }
+    ]
+}

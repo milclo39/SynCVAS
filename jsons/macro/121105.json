@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 121105,
+            "detail": "JVC(ホームシアターモデル)VP HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\2189014950360A\\"
+                }
+            ]
+        }
+    ]
+}

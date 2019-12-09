@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132106,
+            "detail": "RICOH VP1 HDM2",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "#INP:6"
+                }
+            ]
+        }
+    ]
+}

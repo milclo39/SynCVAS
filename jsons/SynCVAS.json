@@ -1,0 +1,215 @@
+{
+    "basic": {
+        "title": "SynCVAS",
+        "backcolor": "#ffffff",
+        "backimage": "qrc:/fl_on.png",
+        "maxpage": 1,
+        "design": 0,
+        "startupmacro": [0],
+        "input1macro": [91],
+        "input2macro": [92],
+        "input3macro": [93],
+        "input4macro": [94]
+    },
+    "control": {
+		"box": [
+			{
+				"ipaddr": "192.168.1.100",
+				"port": 5136,
+				"com": [0, 1],
+				"ir": 5,
+				"ry": [11]
+			},
+			{
+				"ipaddr": "192.168.1.101",
+				"port": 5136,
+				"com": [2]
+			}
+		],
+		"lan": null,
+		"pjlink": null,
+		"tpc": null
+    },
+	"area01":[
+		{
+			"id": 0,
+			"type": "push",
+			"x": 10,
+			"y": 10,
+			"width": 80,
+			"height": 80,
+			"text": "POW",
+			"textpos": 0,
+			"textcolor": "#ffffff",
+			"textsize": 12,
+			"src": "qrc:/btngr_01.png",
+			"deviceid": 3,
+			"macro": [111101],
+			"cmd": ""
+		},
+		{
+			"id": 1,
+			"type": "group",
+			"x": 0,
+			"y": 100,
+			"width": 300,
+			"height": 150,
+			"backcolor": "#000000",
+			"backimage": "",
+			"factor": 1,
+			"group": [2,3]
+		},
+		{
+			"id": 2,
+			"type": "radio",
+			"x": 10,
+			"y": 140,
+			"width": 80,
+			"height": 80,
+			"text": "PC",
+			"textpos": 2,
+			"src": "qrc:/btngr_05.png",
+			"cmd": "{\"switch input\":\"camera\"}"
+		},
+		{
+			"id": 3,
+			"type": "radio",
+			"x": 110,
+			"y": 140,
+			"width": 80,
+			"height": 80,
+			"text": "HDMI",
+			"textpos": 2,
+			"src": "qrc:/btngr_05.png",
+			"cmd": "{\"switch input\":\"hdmi1\"}"
+		},
+		{
+			"id": 4,
+			"type": "radio",
+			"x": 210,
+			"y": 140,
+			"width": 80,
+			"height": 80,
+			"text": "ブルーレイ",
+			"textpos": 2,
+			"image": "qrc:/bd.png",
+			"imagepos": 0,
+			"src": "qrc:/btngr_05.png",
+			"cmd": "{\"switch input\":\"up\"}"
+		},
+		{
+			"id": 5,
+			"type": "text",
+			"x": 100,
+			"y": 100,
+			"width": 100,
+			"height": 30,
+			"text": "映像切替",
+			"textpos": 0
+		},
+		{
+			"id": 6,
+			"type": "slider",
+			"x": 0,
+			"y": 300,
+			"width": 300,
+			"height": 100,
+			"text": "AV",
+			"textpos": 0,
+			"min": 0,
+			"max": 16
+		}
+	],
+	"device":[
+	    {
+			"id": 1,
+	        "kind": 6,
+			"offset":114000,
+	        "name": "ELMO プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1",
+			"port": 4352,
+	        "cmdheader": "",
+	        "cmdfooter": ""
+	    },
+	    {
+			"id": 2,
+	        "kind": 6,
+			"offset":714000,
+	        "name": "ELMO プロジェクタ PJLink",
+	        "direction": "PJLink",
+	        "property": "192.168.1.122",
+			"port": 4352
+	    },
+	    {
+			"id": 3,
+	        "kind": 8,
+			"offset":814000,
+	        "name": "ELMO MC-50X",
+	        "direction": "Ry",
+	        "property": "a"
+	    }
+	],
+    "macro": [
+        {
+            "id": 1,
+            "detail": "IF-6000 VC-01スイッチャ",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "01A@SSW,1,1\\0D"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "detail": "IF-6000 ブルーレイ",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "02AF1S02\\0D",
+					"wait": 200,
+                    "freecmd": "02AF1S00\\0D"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "detail": "IF-6000 リレー",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "03A01\\0D",
+					"wait": 500,
+                    "freecmd": "03A00\\0D"
+                }
+            ]
+        }
+    ],
+	"param":[
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0
+	],
+	"receive":[
+		{
+			"id": 1,
+	        "type": 6,
+			"detail":"OK応答",
+	        "macro": 6,
+			"receive":"OK ",
+			"deviceid":12,
+			"method":"any"
+		}
+	]
+}

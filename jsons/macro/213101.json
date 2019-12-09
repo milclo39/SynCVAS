@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 213101,
+            "detail": "LG(モニター(ID:ALL)) POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "ka \\00\\ \\01\\"
+                }
+            ]
+        }
+    ]
+}

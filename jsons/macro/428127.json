@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428127,
+            "detail": "Panasonic BD シリアル HDD切替",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:HDD"
+                }
+            ]
+        }
+    ]
+}

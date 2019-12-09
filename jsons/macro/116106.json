@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 116106,
+            "detail": "CASIO VP HDMI2",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "(SRC14)"
+                }
+            ]
+        }
+    ]
+}

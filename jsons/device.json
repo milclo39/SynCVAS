@@ -1,0 +1,143 @@
+{
+	"device":[
+	    {
+			"id": 1,
+	        "kind": 6,
+			"offset":111000,
+	        "name": "NEC プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1",
+	        "cmdheader": "\\02",
+	        "cmdfooter": "\\03"
+	    },
+	    {
+			"id": 2,
+	        "kind": 6,
+			"offset":112000,
+	        "name": "EPSON プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 3,
+	        "kind": 6,
+			"offset":114000,
+	        "name": "ELMO プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 4,
+	        "kind": 6,
+			"offset":115000,
+	        "name": "Optoma プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 5,
+	        "kind": 6,
+			"offset":116000,
+	        "name": "CASIO プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 6,
+	        "kind": 6,
+			"offset":117000,
+	        "name": "CANON プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 7,
+	        "kind": 6,
+			"offset":118000,
+	        "name": "Christie プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 8,
+	        "kind": 6,
+			"offset":120000,
+	        "name": "SANYO プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 9,
+	        "kind": 6,
+			"offset":121000,
+	        "name": "JVC プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 10,
+	        "kind": 6,
+			"offset":123000,
+	        "name": "SONY プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 11,
+	        "kind": 6,
+			"offset":124000,
+	        "name": "TAXAN プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 12,
+	        "kind": 6,
+			"offset":128000,
+	        "name": "Panasonic プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 13,
+	        "kind": 6,
+			"offset":130000,
+	        "name": "HITACHI プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 14,
+	        "kind": 6,
+			"offset":131000,
+	        "name": "MITSUBISHI プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 15,
+	        "kind": 6,
+			"offset":132000,
+	        "name": "ROCHO プロジェクタ",
+	        "direction": "COM",
+	        "property": "9600,8,n,1"
+	    },
+	    {
+			"id": 16,
+	        "kind": 6,
+			"offset":714000,
+	        "name": " プロジェクタ",
+	        "direction": "PJLink",
+	        "property": "192.168.1.122",
+			"port": 4352
+	    },
+	    {
+			"id": 5,
+	        "kind": 8,
+			"offset":814000,
+	        "name": "ELMO MC-50X",
+	        "direction": "Ry",
+	        "property": "a"
+	    }
+	]
+}

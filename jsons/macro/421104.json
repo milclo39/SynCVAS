@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 421104,
+            "detail": "JVC BD シリアル 早送り",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\AB\\"
+                }
+            ]
+        }
+    ]
+}

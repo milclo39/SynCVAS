@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428113,
+            "detail": "Panasonic BD シリアル カーソル左",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:CLF"
+                }
+            ]
+        }
+    ]
+}

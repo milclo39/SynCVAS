@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 219105,
+            "detail": "SAMSUNG(モニターID:0) HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\AA1400012136\\"
+                }
+            ]
+        }
+    ]
+}

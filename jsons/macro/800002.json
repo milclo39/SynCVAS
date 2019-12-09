@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 800002,
+            "detail": "接点出力２",
+            "direction": "Ry",
+            "port": 0,
+            "sequence": [
+                {
+                    "staticcmd": 16384
+                }
+            ]
+        }
+    ]
+}

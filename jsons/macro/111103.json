@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 111103,
+            "detail": "NEC VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\021000000012\\"
+                }
+            ]
+        }
+    ]
+}

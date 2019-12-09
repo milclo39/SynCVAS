@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 117104,
+            "detail": "CANON VP MUTE OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "BLANK=OFF"
+                }
+            ]
+        }
+    ]
+}

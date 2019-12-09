@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 226121,
+            "detail": "TOSHIBA(中型ディスプレイ) POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "800q!001"
+                }
+            ]
+        }
+    ]
+}

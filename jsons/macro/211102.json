@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 211102,
+            "detail": "NEC(モニター(ID:ALL)) POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\01\\0*0A0C\\02\\C203D60004\\031D\\"
+                }
+            ]
+        }
+    ]
+}

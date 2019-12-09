@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 121102,
+            "detail": "JVC(ホームシアターモデル)VP POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\2189015057300A\\"
+                }
+            ]
+        }
+    ]
+}

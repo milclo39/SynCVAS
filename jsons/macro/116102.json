@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 116102,
+            "detail": "CASIO VP POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "(PWR0)"
+                }
+            ]
+        }
+    ]
+}

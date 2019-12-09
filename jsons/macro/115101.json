@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 115101,
+            "detail": "Optoma VP POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "~0000 1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 120104,
+            "detail": "SANYO VP MUTE OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "C0E"
+                }
+            ]
+        }
+    ]
+}

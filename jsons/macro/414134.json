@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 414134,
+            "detail": "ELMO P30HD シリアル AF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\AF0  \\03\\"
+                }
+            ]
+        }
+    ]
+}

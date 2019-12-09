@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 124103,
+            "detail": "TAXAN VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "IMBK   1"
+                }
+            ]
+        }
+    ]
+}

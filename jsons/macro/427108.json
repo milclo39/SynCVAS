@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 427108,
+            "detail": "PIONEER BD シリアル 取出し",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "/A181AFB6/RU"
+                }
+            ]
+        }
+    ]
+}

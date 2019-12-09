@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425135,
+            "detail": "TASCAM BD シリアル カーソル下",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "!7OSDDN"
+                }
+            ]
+        }
+    ]
+}

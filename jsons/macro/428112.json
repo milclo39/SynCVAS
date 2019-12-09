@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428112,
+            "detail": "Panasonic BD シリアル 決定",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:ENT"
+                }
+            ]
+        }
+    ]
+}

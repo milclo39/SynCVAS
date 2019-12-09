@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132125,
+            "detail": "RICOH VP3 HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\020300000201A1CB\\"
+                }
+            ]
+        }
+    ]
+}

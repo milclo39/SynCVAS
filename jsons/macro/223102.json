@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 223102,
+            "detail": "SONY(モニター) POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\8C000002008E\\"
+                }
+            ]
+        }
+    ]
+}

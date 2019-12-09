@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 427115,
+            "detail": "PIONEER BD シリアル カーソル 下",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "/A185FFFF/RU"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 130105,
+            "detail": "HITACHI VP HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\BEEF0306000ED2010000200300\\"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 900010,
+            "detail": "Wait 1000",
+            "direction": "Ry",
+            "port": 0,
+            "sequence": [
+                {
+                    "wait": 1000
+                }
+            ]
+        }
+    ]
+}

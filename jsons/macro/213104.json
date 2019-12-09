@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 213104,
+            "detail": "LG(モニター(ID:ALL)) HDMI1(PC)",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "xb \\00\\ \\A0\\"
+                }
+            ]
+        }
+    ]
+}

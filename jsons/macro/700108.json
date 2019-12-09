@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 700108,
+            "detail": "シリアル内蔵コマンド COM1 OPE8",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "staticcmd": "ope8"
+                }
+            ]
+        }
+    ]
+}

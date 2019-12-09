@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 421106,
+            "detail": "JVC BD シリアル スキップ前",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\96\\"
+                }
+            ]
+        }
+    ]
+}

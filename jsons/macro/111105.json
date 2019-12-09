@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 111105,
+            "detail": "NEC VP HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\020300000201A1CB\\"
+                }
+            ]
+        }
+    ]
+}

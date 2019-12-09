@@ -1,0 +1,21 @@
+{
+    "macro": [
+        {
+            "id": 421127,
+            "detail": "JVC BD シリアル HDD切替",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\F0\\"
+                },
+                {
+                    "wait": 500
+                },
+                {
+                    "freecmd": "\\34\\"
+                }
+            ]
+        }
+    ]
+}

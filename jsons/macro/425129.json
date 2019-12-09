@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425129,
+            "detail": "TASCAM BD POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "!7OPWR00"
+                }
+            ]
+        }
+    ]
+}

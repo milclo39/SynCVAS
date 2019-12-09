@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 124101,
+            "detail": "TAXAN VP POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "POWR   1"
+                }
+            ]
+        }
+    ]
+}

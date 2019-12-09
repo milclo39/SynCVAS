@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 427111,
+            "detail": "PIONEER BD シリアル MENU",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "/A181AFB4/RU"
+                }
+            ]
+        }
+    ]
+}

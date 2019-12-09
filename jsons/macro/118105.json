@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 118105,
+            "detail": "Christie VP HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "(SIN 3)"
+                }
+            ]
+        }
+    ]
+}

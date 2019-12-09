@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 600133,
+            "detail": "赤外線 F1 OPE33",
+            "direction": "IR",
+            "port": 1,
+            "sequence": [
+                {
+                    "staticcmd": "ope33"
+                }
+            ]
+        }
+    ]
+}

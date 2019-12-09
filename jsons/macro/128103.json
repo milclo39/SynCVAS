@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 128103,
+            "detail": "Panasonic VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\OSH:1\\03\\"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 123101,
+            "detail": "SONY VP POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\A9172E0000003F9A\\"
+                }
+            ]
+        }
+    ]
+}

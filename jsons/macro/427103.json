@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 427103,
+            "detail": "PIONEER BD シリアル 巻戻し",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "NR"
+                }
+            ]
+        }
+    ]
+}

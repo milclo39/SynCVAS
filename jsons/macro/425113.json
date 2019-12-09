@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425113,
+            "detail": "TASCAM BD シリアル SD切替",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\0A\\07F0103"
+                }
+            ]
+        }
+    ]
+}

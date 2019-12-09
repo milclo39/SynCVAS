@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 112105,
+            "detail": "EPSON VP HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "SOURCE 30"
+                }
+            ]
+        }
+    ]
+}

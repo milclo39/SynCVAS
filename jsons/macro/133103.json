@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 133103,
+            "detail": "PJLink VP MUTE ON",
+            "direction": "PJLink",
+            "port": 0,
+            "sequence": [
+                {
+                    "staticcmd": "%1AVMT 11"
+                }
+            ]
+        }
+    ]
+}

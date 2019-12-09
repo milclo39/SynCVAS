@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 114105,
+            "detail": "ELMO VP HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\BEEF0306000ED2010000200300\\"
+                }
+            ]
+        }
+    ]
+}

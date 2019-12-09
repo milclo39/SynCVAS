@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 130104,
+            "detail": "HITACHI VP MUTE OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\BEEF030600FBD8010020300000\\"
+                }
+            ]
+        }
+    ]
+}

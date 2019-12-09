@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 427104,
+            "detail": "PIONEER BD シリアル 早送り",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "NF"
+                }
+            ]
+        }
+    ]
+}

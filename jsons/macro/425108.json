@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425108,
+            "detail": "TASCAM SS シリアル CD取出し",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\0A\\018"
+                }
+            ]
+        }
+    ]
+}

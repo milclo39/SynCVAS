@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428126,
+            "detail": "Panasonic BD シリアル BD切替",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:DSC"
+                }
+            ]
+        }
+    ]
+}

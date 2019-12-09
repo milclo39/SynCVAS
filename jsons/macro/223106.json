@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 223106,
+            "detail": "SONY(モニター)  DVI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\8C00010220B1\\"
+                }
+            ]
+        }
+    ]
+}

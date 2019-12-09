@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 131103,
+            "detail": "MITSUBISHI VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "00MUTE1"
+                }
+            ]
+        }
+    ]
+}

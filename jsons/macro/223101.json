@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 223101,
+            "detail": "SONY(モニター) POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\8C000002018F\\"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 427109,
+            "detail": "PIONEER BD POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "PF"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 228103,
+            "detail": "Panasonic(モニター) MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\VMT:1\\03\\"
+                }
+            ]
+        }
+    ]
+}

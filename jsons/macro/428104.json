@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428104,
+            "detail": "Panasonic BD シリアル 早送り",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:FSR"
+                }
+            ]
+        }
+    ]
+}

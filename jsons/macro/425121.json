@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425121,
+            "detail": "TASCAM BD シリアル 再生",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "!7PLYUP"
+                }
+            ]
+        }
+    ]
+}

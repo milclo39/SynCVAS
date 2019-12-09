@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428109,
+            "detail": "Panasonic BD POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:POF"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 112101,
+            "detail": "EPSON VP POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "PWR ON"
+                }
+            ]
+        }
+    ]
+}

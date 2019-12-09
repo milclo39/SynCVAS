@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 211106,
+            "detail": "NEC(モニター(ID:ALL)) HDMI2",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\01\\0*0E0A\\02\\00600012\\031A\\"
+                }
+            ]
+        }
+    ]
+}

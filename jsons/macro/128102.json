@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 128102,
+            "detail": "Panasonic VP POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\POF\\03\\"
+                }
+            ]
+        }
+    ]
+}

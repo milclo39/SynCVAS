@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 428102,
+            "detail": "Panasonic BD シリアル 停止",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "REM:STP"
+                }
+            ]
+        }
+    ]
+}

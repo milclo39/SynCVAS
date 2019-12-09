@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 118103,
+            "detail": "Christie VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "(SHU 1)"
+                }
+            ]
+        }
+    ]
+}

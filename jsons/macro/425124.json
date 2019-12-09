@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425124,
+            "detail": "TASCAM BD シリアル 早送り",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "!7SCNUP"
+                }
+            ]
+        }
+    ]
+}

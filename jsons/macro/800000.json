@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 800000,
+            "detail": "接点出力 解除",
+            "direction": "Ry",
+            "port": 0,
+            "sequence": [
+                {
+                    "staticcmd": 0
+                }
+            ]
+        }
+    ]
+}

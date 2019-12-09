@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 421102,
+            "detail": "JVC BD シリアル 停止",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\3F\\"
+                }
+            ]
+        }
+    ]
+}

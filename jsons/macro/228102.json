@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 228102,
+            "detail": "Panasonic(モニター) POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\POF\\03\\"
+                }
+            ]
+        }
+    ]
+}

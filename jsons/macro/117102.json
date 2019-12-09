@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 117102,
+            "detail": "CANON VP POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "POWER OFF"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 111102,
+            "detail": "NEC VP POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\020100000003\\"
+                }
+            ]
+        }
+    ]
+}

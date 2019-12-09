@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 222102,
+            "detail": "SHARP(モニター) POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "POWR0000"
+                }
+            ]
+        }
+    ]
+}

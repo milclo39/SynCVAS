@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 421110,
+            "detail": "JVC BD シリアル 電源ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\A0\\"
+                }
+            ]
+        }
+    ]
+}

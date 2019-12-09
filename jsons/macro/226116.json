@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 226116,
+            "detail": "TOSHIBA(大型ディスプレイ) HDMI2",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\074D494E1008\\"
+                }
+            ]
+        }
+    ]
+}

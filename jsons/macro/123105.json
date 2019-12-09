@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 123105,
+            "detail": "SONY VP INPUTC",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\A90001010004059A\\"
+                }
+            ]
+        }
+    ]
+}

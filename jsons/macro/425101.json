@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425101,
+            "detail": "TASCAM SS シリアル 再生",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\0A\\012"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 115103,
+            "detail": "Optoma VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "~0002 1"
+                }
+            ]
+        }
+    ]
+}

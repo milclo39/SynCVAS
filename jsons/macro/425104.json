@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425104,
+            "detail": "TASCAM SS シリアル 早送り",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\0A\\01600"
+                }
+            ]
+        }
+    ]
+}

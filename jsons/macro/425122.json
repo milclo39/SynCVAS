@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425122,
+            "detail": "TASCAM BD シリアル 停止",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "!7PLYSTP"
+                }
+            ]
+        }
+    ]
+}

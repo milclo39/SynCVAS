@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 228105,
+            "detail": "Panasonic(モニター) HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\IMS:HM1\\03\\"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 131106,
+            "detail": "MITSUBISHI VP DVI-D",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "00_d2"
+                }
+            ]
+        }
+    ]
+}

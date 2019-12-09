@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 128106,
+            "detail": "Panasonic VP DVI-D",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\IIS:DVI\\03\\"
+                }
+            ]
+        }
+    ]
+}

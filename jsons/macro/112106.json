@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 112106,
+            "detail": "EPSON VP DVI-D",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "SOURCE 40"
+                }
+            ]
+        }
+    ]
+}

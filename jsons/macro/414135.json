@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 414135,
+            "detail": "ELMO P30HD シリアル LIGHT OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\PL0  \\03\\"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 131105,
+            "detail": "MITSUBISHI VP HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "00_d1"
+                }
+            ]
+        }
+    ]
+}

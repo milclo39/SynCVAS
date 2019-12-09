@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 421122,
+            "detail": "JVC BD シリアル 録画開始",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\CA\\"
+                }
+            ]
+        }
+    ]
+}

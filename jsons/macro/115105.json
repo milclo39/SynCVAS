@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 115105,
+            "detail": "Optoma VP HDMI1",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "~0012 1"
+                }
+            ]
+        }
+    ]
+}

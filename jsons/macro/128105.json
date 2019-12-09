@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 128105,
+            "detail": "Panasonic VP HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\02\\IIS:HD1\\03\\"
+                }
+            ]
+        }
+    ]
+}

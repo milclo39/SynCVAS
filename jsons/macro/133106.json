@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 133106,
+            "detail": "PJLink VP HDMI2",
+            "direction": "PJLink",
+            "port": 0,
+            "sequence": [
+                {
+                    "staticcmd": "%1INPT 32"
+                }
+            ]
+        }
+    ]
+}

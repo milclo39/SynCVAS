@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 120106,
+            "detail": "SANYO VP INPUT2",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "C07"
+                }
+            ]
+        }
+    ]
+}

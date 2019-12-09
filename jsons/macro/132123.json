@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132123,
+            "detail": "RICOH VP3 MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\021000000012"
+                }
+            ]
+        }
+    ]
+}

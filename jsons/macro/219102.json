@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 219102,
+            "detail": "SAMSUNG(モニターID:0) POWER OFF",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\AA1100010012\\"
+                }
+            ]
+        }
+    ]
+}

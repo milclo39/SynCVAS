@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 121101,
+            "detail": "JVC(ホームシアターモデル)VP POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\2189015057310A\\"
+                }
+            ]
+        }
+    ]
+}

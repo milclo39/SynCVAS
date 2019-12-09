@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 226101,
+            "detail": "TOSHIBA(マルチディスプレイ) POWER ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\A60000000004011802B9\\"
+                }
+            ]
+        }
+    ]
+}

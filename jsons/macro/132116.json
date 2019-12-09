@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132116,
+            "detail": "RICOH VP2 DVI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "MSRC3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132115,
+            "detail": "RICOH VP2 HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "MSRC2"
+                }
+            ]
+        }
+    ]
+}

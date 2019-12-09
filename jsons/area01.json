@@ -1,0 +1,92 @@
+{
+	"area01":[
+		{
+			"id": 0,
+			"type": "push",
+			"x": 10,
+			"y": 10,
+			"width": 80,
+			"height": 80,
+			"text": "POW",
+			"textpos": 0,
+			"textcolor": "#ffffff",
+			"textsize": 12,
+			"src": "qrc:/btngr_01.png",
+			"deviceid": 3,
+			"macro": [111101],
+			"cmd": ""
+		},
+		{
+			"id": 1,
+			"type": "group",
+			"x": 0,
+			"y": 100,
+			"width": 300,
+			"height": 150,
+			"backcolor": "#000000",
+			"backimage": "",
+			"factor": 1,
+			"group": [2,3]
+		},
+		{
+			"id": 2,
+			"type": "radio",
+			"x": 10,
+			"y": 140,
+			"width": 80,
+			"height": 80,
+			"text": "PC",
+			"textpos": 2,
+			"src": "qrc:/btngr_05.png",
+			"cmd": "{\"switch input\":\"camera\"}"
+		},
+		{
+			"id": 3,
+			"type": "radio",
+			"x": 110,
+			"y": 140,
+			"width": 80,
+			"height": 80,
+			"text": "HDMI",
+			"textpos": 2,
+			"src": "qrc:/btngr_05.png",
+			"cmd": "{\"switch input\":\"hdmi1\"}"
+		},
+		{
+			"id": 4,
+			"type": "radio",
+			"x": 210,
+			"y": 140,
+			"width": 80,
+			"height": 80,
+			"text": "ÉuÉãÅ[ÉåÉC",
+			"textpos": 2,
+			"image": "qrc:/bd.png",
+			"imagepos": 0,
+			"src": "qrc:/btngr_05.png",
+			"cmd": "{\"switch input\":\"up\"}"
+		},
+		{
+			"id": 5,
+			"type": "text",
+			"x": 100,
+			"y": 100,
+			"width": 100,
+			"height": 30,
+			"text": "âfëúêÿë÷",
+			"textpos": 0
+		},
+		{
+			"id": 6,
+			"type": "slider",
+			"x": 0,
+			"y": 300,
+			"width": 300,
+			"height": 100,
+			"text": "AV",
+			"textpos": 0,
+			"min": 0,
+			"max": 16
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 222106,
+            "detail": "SHARP(モニター) HDMI[PC]",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "INPS0010"
+                }
+            ]
+        }
+    ]
+}

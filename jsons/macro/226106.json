@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 226106,
+            "detail": "東芝(マルチディスプレイ) HDMI2",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\A6000000000701AC0901010009\\"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 132105,
+            "detail": "RICOH VP1 HDMI",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "#INP:5"
+                }
+            ]
+        }
+    ]
+}

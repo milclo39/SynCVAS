@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 425105,
+            "detail": "TASCAM SS シリアル 一時停止",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\0A\\01401"
+                }
+            ]
+        }
+    ]
+}

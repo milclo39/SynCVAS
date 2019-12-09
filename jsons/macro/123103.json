@@ -1,0 +1,15 @@
+{
+    "macro": [
+        {
+            "id": 123103,
+            "detail": "SONY VP MUTE ON",
+            "direction": "COM",
+            "port": 1,
+            "sequence": [
+                {
+                    "freecmd": "\\A90030000001319A\\"
+                }
+            ]
+        }
+    ]
+}
