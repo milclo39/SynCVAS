@@ -64,6 +64,24 @@ public:
 		m_nObjCount = idx;
 		// マクロの保存（解析後回し）
 		m_arMacro = jsonDoc.object().value("macro").toArray();
+
+		// control解析
+		QJsonObject obControl = jsonDoc.object().value("control").toObject();
+		idx = 0;
+		foreach(QJsonValue value, obControl.value("box").toArray()){
+			m_stIfbox[idx].ipaddr = value.toObject().value("ipaddr").toString();
+			m_stIfbox[idx].port = value.toObject().value("port").toInt();
+			idx++;
+		}
+
+		// device解析
+		QJsonArray arDevice = jsonDoc.object().value("device").toArray();
+		idx = 0;
+		foreach(QJsonValue value, arDevice){
+			qDebug() << "value = " << value.toObject();
+			m_stDev[idx].id = value.toObject().value("id").toInt();
+			idx++;
+		}
 	}
 	~JsonObj()
 	{
@@ -78,6 +96,16 @@ public:
 	Q_INVOKABLE qint32 getImagePos(int idx){return m_stBtn[idx].imagepos;}
 	Q_INVOKABLE QString getSrc(int idx){return m_stBtn[idx].src;}
 	Q_INVOKABLE QString getCmd(int idx){return m_stBtn[idx].cmd;}
+
+	Q_INVOKABLE QString getDevStr(int id)
+	{
+		for(int idx = 0; idx < 100; idx++){
+			if(id == m_stDev[idx].id){
+				return m_stDev[idx].strdev;
+			}
+		}
+		return "";
+	}
 
 	// マクロ実行
 	Q_INVOKABLE void execMacro(qint32 id)
@@ -114,11 +142,27 @@ struct stButton {
 	QString cmd;	// 送信コマンド
 	qint32 macro;	// マクロ
 };
+struct stIfbox {
+	QString ipaddr;	// IPアドレス
+	qint32 port;	// ポート
+	qint16 com[3];
+	qint16 ir;
+	qint16 Ry[4];
+};
+struct stDevice {
+	qint32 id;		// デバイスID
+	QString strdev;	// 送信機器
+	QString strAddress;	// 送信アドレス
+	QString strHeader;	// ヘッダ
+	QString strfooter;	// フッタ
+};
 
 private:
 	Network m_clNetwork;	// ネットワーククラス（マクロ実行用）
 	qint32 m_nObjCount;		// オブジェクト数
 	stButton m_stBtn[100];	// ボタン群
+	stIfbox m_stIfbox[10];	// IFBOX群
+	stDevice m_stDev[100];	// デバイス群
 	QJsonArray m_arMacro;	// マクロ
 };
 #endif // JSONOBJ_H
