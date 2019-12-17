@@ -16,14 +16,14 @@
 			{
 				"ipaddr": "192.168.1.100",
 				"port": 5136,
-				"com": [0, 1],
+				"com": [0,1,null],
 				"ir": 5,
-				"ry": [11]
+				"ry": [11,null,null,null]
 			},
 			{
 				"ipaddr": "192.168.1.101",
 				"port": 5136,
-				"com": [2]
+				"com": [2,null,null]
 			}
 		],
 		"lan": null,
@@ -129,8 +129,9 @@
 	        "direction": "COM",
 	        "property": "9600,8,n,1",
 			"port": 4352,
+	        "cmddevice": "00SC1",
 	        "cmdheader": "",
-	        "cmdfooter": ""
+	        "cmdfooter": "\\0D"
 	    },
 	    {
 			"id": 2,
@@ -156,6 +157,7 @@
             "detail": "IF-6000 VC-01スイッチャ",
             "direction": "COM",
             "port": 1,
+            "deviceid": 1,
             "sequence": [
                 {
                     "freecmd": "01A@SSW,1,1\\0D"
@@ -167,6 +169,7 @@
             "detail": "IF-6000 ブルーレイ",
             "direction": "COM",
             "port": 1,
+            "deviceid": 1,
             "sequence": [
                 {
                     "freecmd": "02AF1S02\\0D",
@@ -180,6 +183,7 @@
             "detail": "IF-6000 リレー",
             "direction": "COM",
             "port": 1,
+            "deviceid": 1,
             "sequence": [
                 {
                     "freecmd": "03A01\\0D",
