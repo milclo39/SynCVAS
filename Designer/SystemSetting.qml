@@ -5,7 +5,8 @@ Rectangle{
     id: setting
     property string curIpAddr: txtIpaddr.text
     property string curMacAddr: txtMacaddr.text
-    Column {
+    Text{id: title; font.pixelSize: 24; text: "SystemSetting"}
+    Column{
         spacing: btnsize / 12
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter

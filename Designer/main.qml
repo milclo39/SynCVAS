@@ -31,6 +31,7 @@ ApplicationWindow {
     property string curMacAddr: setting.curMacAddr
 
     Component.onCompleted: {
+        jsonobj.readCurrentJson();
         for(i = 0; i < jsonobj.getObjCount(); i++){
             switch(jsonobj.getType(i)){
             case "group":   // グループ
@@ -100,6 +101,10 @@ ApplicationWindow {
             color: if(modemenu.state === "SYSTEM") {"blue"} else {"black"}
             Text{anchors.centerIn: parent; text:"SYSTEM"; color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {modemenu.state = "SYSTEM"}}
+        }
+        Rectangle{Layout.fillHeight: true; width: 30; color: "black"
+            Text{anchors.centerIn: parent; text:"x"; color: "white"}
+            MouseArea{anchors.fill: parent; onClicked: {msg.visible = true}}
         }
         onStateChanged: {
             helper.execProcess(modemenu.state === "PREVIEW")    // プレビュー実行
@@ -329,8 +334,8 @@ ApplicationWindow {
         Repeater {
             id: sliderobj
             model: ListModel {}
-            EdtText{
-                id: _objSlide
+            EdtSlider{
+                id: _objSlider
             }
         }
         Repeater {
@@ -342,13 +347,13 @@ ApplicationWindow {
         }
     }
     // 機器設定
-    Rectangle{
+    DeviceSetting{
+        id: device
         anchors.bottom: parent.bottom
         width: parent.width
         height: parent.height - modemenu.height
         visible: modemenu.state === "DEVICE"
         z: 100
-        Text{anchors.centerIn: parent; text: "device"}
     }
     // プレビュー
     Rectangle{
@@ -360,12 +365,21 @@ ApplicationWindow {
         Text{anchors.centerIn: parent; text: "preview running..."}
     }
     // 設定画面
-    Setting{
+    SystemSetting{
         id: setting
         anchors.bottom: parent.bottom
         width: parent.width
         height: parent.height - modemenu.height
         visible: modemenu.state === "SYSTEM"
         z: 100
+    }
+    MessageBox{
+        id: msg
+        visible: false
+        anchors.centerIn: parent
+        messageText: "Are you save it?"
+        z: 100
+        onSigYesClick: {jsonobj.writeCurrentJson(); Qt.quit()}
+        onSigNoClick: {Qt.quit()}
     }
 }

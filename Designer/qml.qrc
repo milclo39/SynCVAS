@@ -2,11 +2,14 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>EdtButton.qml</file>
-        <file>Setting.qml</file>
+        <file>SystemSetting.qml</file>
         <file>EdtText.qml</file>
         <file>AddButton.qml</file>
         <file>AddSlider.qml</file>
         <file>AddText.qml</file>
         <file>AddGroup.qml</file>
+        <file>MessageBox.qml</file>
+        <file>DeviceSetting.qml</file>
+        <file>EdtSlider.qml</file>
     </qresource>
 </RCC>

@@ -64,5 +64,6 @@
         <file>pagenext.png</file>
         <file>pageprev.png</file>
         <file>plus.png</file>
+        <file>slider.png</file>
     </qresource>
 </RCC>

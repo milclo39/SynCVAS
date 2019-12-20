@@ -22,13 +22,19 @@ class JsonObj : public QObject
 public:
 	JsonObj(QObject *parent = nullptr) : QObject(parent)
 	{
+	}
+	~JsonObj()
+	{
+	}
+	Q_INVOKABLE void readCurrentJson()
+	{
 #ifdef Q_OS_WIN
 		readJson(qApp->applicationDirPath() + "/" + FILENAME_JSON);
 #else
 		readJson("/sdcard/" + FILENAME_JSON);	// 何故かこのパスでルートを指す
 #endif
 	}
-	~JsonObj()
+	Q_INVOKABLE void writeCurrentJson()
 	{
 #ifdef Q_OS_WIN
 		writeJson(qApp->applicationDirPath() + "/" + FILENAME_JSON);
