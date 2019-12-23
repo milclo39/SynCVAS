@@ -13,11 +13,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 TARGET = SynCVASDesigner
 HEADERS += helper.h \
-            jsonobj.h
+            jsonobj.h \
+    ClView.h
 SOURCES += main.cpp
 
 RESOURCES += qml.qrc \
-    ../images/image.qrc
+	resource/lang.qrc \
+	../images/image.qrc
+
+TRANSLATIONS = \
+	resource/lang/en.ts \
+	resource/lang/ja.ts
+	
+RC_FILE = resource/icon.rc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

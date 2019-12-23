@@ -27,8 +27,8 @@ ApplicationWindow {
     property real defaultSize: 100
     property var curImageFrame: undefined
     property var curImageMimi: undefined
-    property string curIpAddr: setting.curIpAddr
-    property string curMacAddr: setting.curMacAddr
+    property string curIpAddr: device.curIpAddr
+    property string curMacAddr: ""
 
     Component.onCompleted: {
         jsonobj.readCurrentJson();
@@ -84,22 +84,22 @@ ApplicationWindow {
         state: "DESIGN"
         Rectangle{Layout.fillHeight: true;Layout.fillWidth: true
             color: if(modemenu.state === "DESIGN") {"blue"} else {"black"}
-            Text{anchors.centerIn: parent; text:"DESIGN"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("DESIGN"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {modemenu.state = "DESIGN"}}
         }
         Rectangle{Layout.fillHeight: true;Layout.fillWidth: true
             color: if(modemenu.state === "DEVICE") {"blue"} else {"black"}
-            Text{anchors.centerIn: parent; text:"DEVICE"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("DEVICE"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {modemenu.state = "DEVICE"}}
         }
         Rectangle{Layout.fillHeight: true;Layout.fillWidth: true
             color: if(modemenu.state === "PREVIEW") {"blue"} else {"black"}
-            Text{anchors.centerIn: parent; text:"PREVIEW"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("PREVIEW"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {modemenu.state = "PREVIEW"}}
         }
         Rectangle{Layout.fillHeight: true;Layout.fillWidth: true
             color: if(modemenu.state === "SYSTEM") {"blue"} else {"black"}
-            Text{anchors.centerIn: parent; text:"SYSTEM"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("SYSTEM"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {modemenu.state = "SYSTEM"}}
         }
         Rectangle{Layout.fillHeight: true; width: 30; color: "black"
@@ -123,54 +123,54 @@ ApplicationWindow {
         anchors.topMargin: 5
         width: parent.width; height: 50
         Rectangle{id: btn_1; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
-            Text{anchors.centerIn: parent;text:"Create"; color: "white"}
+            Text{anchors.centerIn: parent;text:qsTr("Create"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {}}
         }
         Rectangle{id: btn_2; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
-            Text{anchors.centerIn: parent;text:"Import"; color: "white"}
+            Text{anchors.centerIn: parent;text:qsTr("Import"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {}}
         }
         Rectangle{id: btn_3; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
-            Text{anchors.centerIn: parent;text:"Export"; color: "white"}
+            Text{anchors.centerIn: parent;text:qsTr("Export"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {}}
         }
         Rectangle{id: btn_4; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
-            Text{anchors.centerIn: parent;text:"Add\nPage"; color: "white"}
+            Text{anchors.centerIn: parent;text:qsTr("Add\nPage"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {}}
         }
         Rectangle{id: btn_5; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
-            Text{anchors.centerIn: parent;text:"Remove\nPage"; color: "white"}
+            Text{anchors.centerIn: parent;text:qsTr("Remove\nPage"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {}}
         }
 
         Rectangle{id: btn_style; Layout.fillHeight: true; Layout.fillWidth: true
             color: if(topmenu.state === "Style") {selectcolor} else {nonselcolor}
-            Text{anchors.centerIn: parent;text:"Style"; color: "white"}
+            Text{anchors.centerIn: parent;text:qsTr("Style"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {topmenu.state = "Style"}}
         }
         Rectangle{id: btn_bground; Layout.fillHeight: true;Layout.fillWidth: true
             color: if(topmenu.state === "BackGround") {selectcolor} else {nonselcolor}
-            Text{anchors.centerIn: parent; text:"Back\nGround"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("Back\nGround"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {topmenu.state = "BackGround"}}
         }
         Rectangle{id: btn_button; Layout.fillHeight: true;Layout.fillWidth: true
             color: if(topmenu.state === "Button") {selectcolor} else {nonselcolor}
-            Text{anchors.centerIn: parent; text:"Button"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("Button"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {topmenu.state = "Button"}}
         }
         Rectangle{id: btn_text; Layout.fillHeight: true;Layout.fillWidth: true
             color: if(topmenu.state === "Text") {selectcolor} else {nonselcolor}
-            Text{anchors.centerIn: parent; text:"Text"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("Text"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {topmenu.state = "Text"}}
         }
         Rectangle{id: btn_slide; Layout.fillHeight: true;Layout.fillWidth: true
             color: if(topmenu.state === "Slide") {selectcolor} else {nonselcolor}
-            Text{anchors.centerIn: parent; text:"Slide"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("Slide"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {topmenu.state = "Slide"}}
         }
         Rectangle{id: btn_frame; Layout.fillHeight: true;Layout.fillWidth: true
             color: if(topmenu.state === "Group") {selectcolor} else {nonselcolor}
-            Text{anchors.centerIn: parent; text:"Group"; color: "white"}
+            Text{anchors.centerIn: parent; text:qsTr("Group"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {topmenu.state = "Group"}}
         }
         states: [
@@ -362,7 +362,7 @@ ApplicationWindow {
         height: parent.height - modemenu.height
         visible: modemenu.state === "PREVIEW"
         z: 100
-        Text{anchors.centerIn: parent; text: "preview running..."}
+        Text{anchors.centerIn: parent; text: qsTr("preview running...")}
     }
     // 設定画面
     SystemSetting{

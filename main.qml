@@ -10,7 +10,7 @@ ApplicationWindow {
     width: 768
     height: 432
     title: "Cvas Controller"
-    flags: Qt.FramelessWindowHint
+    flags: Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint
 
     property int pxport: 5136
     property int pjport: 4352

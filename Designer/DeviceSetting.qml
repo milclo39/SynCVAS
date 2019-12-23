@@ -3,9 +3,11 @@ import QtQuick.Controls 2.0
 
 Rectangle{
     id: device
+    property string curIpAddr: txtIpaddr.text
+    property string curPort: txtPort.text
     property int cmbWidth: 200
     property int btnWidth: 100
-    Text{id: title; font.pixelSize: 24; text: "DeviceSetting"}
+    Text{id: title; font.pixelSize: 24; text: qsTr("DeviceSetting")}
     Rectangle{
         anchors.left: parent.left
         anchors.bottom: parent.bottom
@@ -21,21 +23,21 @@ Rectangle{
             columns: 2
             spacing: 10
             Label{
-                font.pixelSize: 24; text: "IP Address"
+                font.pixelSize: 24; text: qsTr("IP Address")
             }
             TextField {
                 id: txtIpaddr
                 width: btnsize
                 font.pointSize: 16
-                placeholderText: qsTr("*.*.*.*")
+                placeholderText: "*.*.*.*"
                 selectByMouse: true
                 text: ""
             }
             Label{
-                font.pixelSize: 24; text: "Port"
+                font.pixelSize: 24; text: qsTr("Port")
             }
             TextField {
-                id: txtMacaddr
+                id: txtPort
                 width: btnsize
                 font.pointSize: 16
                 selectByMouse: true
@@ -56,7 +58,7 @@ Rectangle{
             ComboBox{
                 id: combo1
                 width: cmbWidth
-                model: ["Projector", "Monitor", "player", "Switcher", "other"]
+                model: [qsTr("Projector"), qsTr("Monitor"), qsTr("player"), qsTr("Switcher"), qsTr("other")]
                 onCurrentIndexChanged:{
                     console.log(currentIndex)
                 }
@@ -64,7 +66,7 @@ Rectangle{
             ComboBox{
                 id: combo2
                 width: cmbWidth
-                model: ["ELMO", "PANNA", "SQNY", "RICHON", "other"]
+                model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
                     console.log(currentIndex)
                 }
@@ -82,14 +84,14 @@ Rectangle{
             }
             ComboBox{
                 width: cmbWidth
-                model: ["Projector", "Monitor", "player", "Switcher", "other"]
+                model: [qsTr("Projector"), qsTr("Monitor"), qsTr("player"), qsTr("Switcher"), qsTr("other")]
                 onCurrentIndexChanged:{
                     console.log(currentIndex)
                 }
             }
             ComboBox{
                 width: cmbWidth
-                model: ["ELMO", "PANNA", "SQNY", "RICHON", "other"]
+                model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
                     console.log(currentIndex)
                 }
@@ -106,14 +108,14 @@ Rectangle{
             }
             ComboBox{
                 width: cmbWidth
-                model: ["Projector", "Monitor", "player", "Switcher", "other"]
+                model: [qsTr("Projector"), qsTr("Monitor"), qsTr("player"), qsTr("Switcher"), qsTr("other")]
                 onCurrentIndexChanged:{
                     console.log(currentIndex)
                 }
             }
             ComboBox{
                 width: cmbWidth
-                model: ["ELMO", "PANNA", "SQNY", "RICHON", "other"]
+                model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
                     console.log(currentIndex)
                 }
@@ -126,12 +128,12 @@ Rectangle{
             // 4段目
             Label{
                 font.pixelSize: 20
-                text: "IR"
+                text: qsTr("IR")
             }
             Text{text: " "}
             ComboBox{
                 width: cmbWidth
-                model: ["ELMO", "PANNA", "SQNY", "RICHON", "other"]
+                model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
                     console.log(currentIndex)
                 }
@@ -144,7 +146,7 @@ Rectangle{
             // 5段目
             Label{
                 font.pixelSize: 20
-                text: "Ry"
+                text: qsTr("Ry")
             }
             Text{text: " "}
             Text{text: " "}

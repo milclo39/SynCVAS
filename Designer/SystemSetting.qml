@@ -1,41 +1,25 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
+import QtQuick.Layouts 1.0
 
 Rectangle{
     id: setting
-    property string curIpAddr: txtIpaddr.text
-    property string curMacAddr: txtMacaddr.text
-    Text{id: title; font.pixelSize: 24; text: "SystemSetting"}
-    Column{
-        spacing: btnsize / 12
+    Text{id: title; font.pixelSize: 24; text: qsTr("SystemSetting")}
+    Rectangle{
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
-        Row{
-            Label{
-                anchors.verticalCenter: parent.verticalCenter
-                text: "IP Address:"
-            }
-            TextField {
-                id: txtIpaddr
-                width: btnsize
-                font.pointSize: 16
-                placeholderText: qsTr("*.*.*.*")
-                selectByMouse: true
-                text: ""
-            }
-        }
-        Row{
-            Label{
-                anchors.verticalCenter: parent.verticalCenter
-                text: "MAC Address:"
-            }
-            TextField {
-                id: txtMacaddr
-                width: btnsize
-                font.pointSize: 16
-                placeholderText: qsTr("************")
-                selectByMouse: true
-                text: ""
+        anchors.margins: 10
+        width: 768; height: 432
+        color: "skyblue"
+        Rectangle{
+            Column{
+                width: 200
+                Text{font.pixelSize: 24; text: qsTr("Operation macro")}
+                Text{font.pixelSize: 24; text: qsTr("Ry1 macro")}
+                Text{font.pixelSize: 24; text: qsTr("Ry2 macro")}
+                Text{font.pixelSize: 24; text: qsTr("Ry3 macro")}
+                Text{font.pixelSize: 24; text: qsTr("Ry4 macro")}
             }
         }
     }
