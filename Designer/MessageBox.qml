@@ -3,7 +3,7 @@ import QtQuick.Controls 2.2
 
 Rectangle{
     id: message
-    property string messageText: "Execute OK?"
+    property string messageText: qsTr("Are you sure?")
     signal sigYesClick()
     signal sigNoClick()
     width: 300
@@ -23,7 +23,7 @@ Rectangle{
         spacing: 10
         Button{
             id: btnYes
-            text: "Yes"
+            text: qsTr("Yes")
             width: 120; height: 30
             onClicked: {
                 sigYesClick()
@@ -32,7 +32,7 @@ Rectangle{
         }
         Button{
             id: btnNo
-            text: "No"
+            text: qsTr("No")
             width: 120; height: 30
             onClicked: {
                 sigNoClick()

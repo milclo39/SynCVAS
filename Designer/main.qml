@@ -2,18 +2,21 @@ import QtQuick 2.0
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.0
 import QtQuick.Window 2.1
+import QtQuick.Dialogs 1.1
 import Helper 1.0
 import JsonObj 1.0
 
 ApplicationWindow {
     id: _root
     visible: true
-    width: 800; height: 600
+    width: scrWidth; height: scrHeight+menuHeight
     title: "SynCVAS Designer"
 
     property int pxport: 5136
     property int pjport: 4352
-    property int btnsize: 200
+    property int scrWidth: 1024//800
+    property int scrHeight: 600//480
+    property int menuHeight: 120
     property int i: 0
     property int mimisize: 8
     property string mimicolor: "navy"
@@ -104,7 +107,7 @@ ApplicationWindow {
         }
         Rectangle{Layout.fillHeight: true; width: 30; color: "black"
             Text{anchors.centerIn: parent; text:"x"; color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {msg.visible = true}}
+            MouseArea{anchors.fill: parent; onClicked: {msgend.visible = true}}
         }
         onStateChanged: {
             helper.execProcess(modemenu.state === "PREVIEW")    // プレビュー実行
@@ -124,23 +127,44 @@ ApplicationWindow {
         width: parent.width; height: 50
         Rectangle{id: btn_1; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
             Text{anchors.centerIn: parent;text:qsTr("Create"); color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {}}
+            MouseArea{anchors.fill: parent; onClicked: {msg.visible = true; msg.messageText = qsTr("Edits are discarded. are you sure?")}
+                hoverEnabled: true
+                onHoveredChanged: {parent.opacity = containsMouse? 0.6 : 1}
+                onPressed: {parent.color="blue"}
+                onReleased: {parent.color="silver"}}
+            
         }
         Rectangle{id: btn_2; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
             Text{anchors.centerIn: parent;text:qsTr("Import"); color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {}}
+            MouseArea{anchors.fill: parent; onClicked: {msg.visible = true; msg.messageText = qsTr("Edits are discarded. are you sure?")}
+                hoverEnabled: true
+                onHoveredChanged: {parent.opacity = containsMouse? 0.6 : 1}
+                onPressed: {parent.color="blue"}
+                onReleased: {parent.color="silver"}}
         }
         Rectangle{id: btn_3; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
             Text{anchors.centerIn: parent;text:qsTr("Export"); color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {}}
+            MouseArea{anchors.fill: parent; onClicked: {}
+                hoverEnabled: true
+                onHoveredChanged: {parent.opacity = containsMouse? 0.6 : 1}
+                onPressed: {parent.color="blue"}
+                onReleased: {parent.color="silver"}}
         }
         Rectangle{id: btn_4; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
             Text{anchors.centerIn: parent;text:qsTr("Add\nPage"); color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {}}
+            MouseArea{anchors.fill: parent; onClicked: {}
+                hoverEnabled: true
+                onHoveredChanged: {parent.opacity = containsMouse? 0.6 : 1}
+                onPressed: {parent.color="blue"}
+                onReleased: {parent.color="silver"}}
         }
         Rectangle{id: btn_5; Layout.fillHeight: true; Layout.fillWidth: true; color: "silver"
             Text{anchors.centerIn: parent;text:qsTr("Remove\nPage"); color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {}}
+            MouseArea{anchors.fill: parent; onClicked: {}
+                hoverEnabled: true
+                onHoveredChanged: {parent.opacity = containsMouse? 0.6 : 1}
+                onPressed: {parent.color="blue"}
+                onReleased: {parent.color="silver"}}
         }
 
         Rectangle{id: btn_style; Layout.fillHeight: true; Layout.fillWidth: true
@@ -212,7 +236,7 @@ ApplicationWindow {
             Rectangle{width: 72; height: 72; color: "white"; Image{anchors.fill: parent; source: "background.png"}
             MouseArea{anchors.fill: parent; onClicked: {backimage.source = "background.png"}}}
             Rectangle{width: 72; height: 72; color: "pink"; Text{anchors.centerIn: parent; text:"File"; color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {console.log("file!")}}}
+            MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
         }
     }
     // ボタンメニュー
@@ -232,7 +256,8 @@ ApplicationWindow {
             Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_pc; source: "pc.png"}}
             Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_rgb; source: "rgb.png"}}
             Image{id: btn_pagenext; source: "pagenext.png"}
-            Image{id: btn_plus; source: "plus.png"}
+            Rectangle{width: 72; height: 72; Image{id: btn_plus; source: "plus.png"}
+            MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
         }
     }
     // 追加ボタン
@@ -288,7 +313,7 @@ ApplicationWindow {
     Rectangle{
         anchors.left: _screen.right
         anchors.top: _screen.top
-        width: parent.width - _screen.width
+        width: 32
         height: 32
         color: "silver"
         Text{
@@ -300,10 +325,10 @@ ApplicationWindow {
     // スクリーン
     Rectangle{
         id: _screen
-        x: 0; y: 120
+        x: 0; y: menuHeight
         anchors.left: parent.left
         anchors.bottom: parent.bottom
-        width: 768; height: 432
+        width: scrWidth - 32; height: scrHeight - 48
         // 背景
         Image{ id: backimage; anchors.fill: parent; source: "qrc:/background.png" }
         MouseArea {
@@ -377,9 +402,24 @@ ApplicationWindow {
         id: msg
         visible: false
         anchors.centerIn: parent
-        messageText: "Are you save it?"
         z: 100
         onSigYesClick: {jsonobj.writeCurrentJson(); Qt.quit()}
         onSigNoClick: {Qt.quit()}
+    }
+    MessageBox{
+        id: msgend
+        visible: false
+        anchors.centerIn: parent
+        z: 100
+        onSigYesClick: {jsonobj.writeCurrentJson(); Qt.quit()}
+        onSigNoClick: {Qt.quit()}
+    }
+    FileDialog {
+        id: fileDialog
+        folder: shortcuts.pictures
+        onAccepted: {
+            console.log("file: " + fileUrls)
+        }
+        onRejected: {}
     }
 }

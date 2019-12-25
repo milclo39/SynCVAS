@@ -27,7 +27,7 @@ Rectangle{
             }
             TextField {
                 id: txtIpaddr
-                width: btnsize
+                width: 200
                 font.pointSize: 16
                 placeholderText: "*.*.*.*"
                 selectByMouse: true
@@ -38,7 +38,7 @@ Rectangle{
             }
             TextField {
                 id: txtPort
-                width: btnsize
+                width: 200
                 font.pointSize: 16
                 selectByMouse: true
                 text: ""
@@ -60,7 +60,7 @@ Rectangle{
                 width: cmbWidth
                 model: [qsTr("Projector"), qsTr("Monitor"), qsTr("player"), qsTr("Switcher"), qsTr("other")]
                 onCurrentIndexChanged:{
-                    console.log(currentIndex)
+                    //console.log(currentIndex)
                 }
             }
             ComboBox{
@@ -68,7 +68,7 @@ Rectangle{
                 width: cmbWidth
                 model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
-                    console.log(currentIndex)
+                    //console.log(currentIndex)
                 }
             }
             Button{
@@ -86,14 +86,12 @@ Rectangle{
                 width: cmbWidth
                 model: [qsTr("Projector"), qsTr("Monitor"), qsTr("player"), qsTr("Switcher"), qsTr("other")]
                 onCurrentIndexChanged:{
-                    console.log(currentIndex)
                 }
             }
             ComboBox{
                 width: cmbWidth
                 model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
-                    console.log(currentIndex)
                 }
             }
             Button{
@@ -110,14 +108,12 @@ Rectangle{
                 width: cmbWidth
                 model: [qsTr("Projector"), qsTr("Monitor"), qsTr("player"), qsTr("Switcher"), qsTr("other")]
                 onCurrentIndexChanged:{
-                    console.log(currentIndex)
                 }
             }
             ComboBox{
                 width: cmbWidth
                 model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
-                    console.log(currentIndex)
                 }
             }
             Button{
@@ -135,7 +131,6 @@ Rectangle{
                 width: cmbWidth
                 model: [qsTr("ELMO"), qsTr("PANNA"), qsTr("SQNY"), qsTr("RICHON"), qsTr("other")]
                 onCurrentIndexChanged:{
-                    console.log(currentIndex)
                 }
             }
             Button{

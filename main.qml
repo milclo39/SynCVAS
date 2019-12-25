@@ -7,14 +7,14 @@ import JsonObj 1.0
 ApplicationWindow {
     id: _root
     visible: true
-    width: 768
-    height: 432
+    width: scrWidth; height: scrHeight
     title: "Cvas Controller"
     flags: Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint
 
     property int pxport: 5136
     property int pjport: 4352
-    property int btnsize: 200
+    property int scrWidth: 1024//800
+    property int scrHeight: 600//480
     property int i: 0
 
     Component.onCompleted: {
@@ -225,7 +225,7 @@ ApplicationWindow {
             drag.target: parent
         }
         Column {
-            spacing: btnsize / 12
+            spacing: 16
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             Row{
@@ -235,7 +235,7 @@ ApplicationWindow {
                 }
                 TextField {
                     id: txtIpaddr
-                    width: btnsize
+                    width: 200
                     font.pointSize: 16
                     placeholderText: qsTr("*.*.*.*")
                     selectByMouse: true
@@ -249,7 +249,7 @@ ApplicationWindow {
                 }
                 TextField {
                     id: txtMacaddr
-                    width: btnsize
+                    width: 200
                     font.pointSize: 16
                     placeholderText: qsTr("************")
                     selectByMouse: true

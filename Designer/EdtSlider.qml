@@ -68,7 +68,7 @@ Rectangle {
                 frame.border.width = 0
             }
             onDoubleClicked: {
-                console.log("dohaodoahfo")
+                console.log("onDoubleClicked")
             }
             onWheel: {  //ホイール動作
                 _objSlider.width += wheel.angleDelta.y / 120

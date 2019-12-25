@@ -2,6 +2,7 @@
 #define CLVIEW_H
 
 #include <QQuickView>
+#include <QDebug>
 
 class ClView : public QQuickView
 {
@@ -12,6 +13,13 @@ public:
 	{
 	}
 	~ClView(){}
+protected:
+	// 閉じるイベント
+	void closeEvent(QCloseEvent* ce)
+	{
+		qDebug() << "ahoaho";
+		ce->ignore();
+	}
 };
 
 #endif // CLVIEW_H

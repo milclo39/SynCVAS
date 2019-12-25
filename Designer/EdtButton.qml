@@ -52,10 +52,10 @@ Rectangle {
     }
     Menu {    // 右クリックメニュー
         id: menu
-        MenuItem { text: "Cut"; onTriggered: {console.log("Cut")} }
-        MenuItem { text: "Copy"; onTriggered: {console.log("Copy")} }
-        MenuItem { text: "Paste"; onTriggered: {console.log("Paste")} }
-        MenuItem { text: "Delete"; onTriggered: {console.log("Delete")} }
+        MenuItem { text: qsTr("Cut"); onTriggered: {console.log("Cut")} }
+        MenuItem { text: qsTr("Copy"); onTriggered: {console.log("Copy")} }
+        MenuItem { text: qsTr("Paste"); onTriggered: {console.log("Paste")} }
+        MenuItem { text: qsTr("Delete"); onTriggered: {console.log("Delete")} }
     }
     PinchArea {
         anchors.fill: parent

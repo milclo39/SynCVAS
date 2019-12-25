@@ -110,6 +110,47 @@
     </message>
 </context>
 <context>
+    <name>EdtButton</name>
+    <message>
+        <location filename="../../EdtButton.qml" line="+55"/>
+        <source>Cut</source>
+        <translation type="unfinished">切り取り</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy</source>
+        <translation type="unfinished">コピー</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Paste</source>
+        <translation type="unfinished">貼り付け</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delete</source>
+        <translation type="unfinished">削除</translation>
+    </message>
+</context>
+<context>
+    <name>MessageBox</name>
+    <message>
+        <location filename="../../MessageBox.qml" line="+6"/>
+        <source>Are you sure?</source>
+        <translation type="unfinished">よろしいですか？</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Yes</source>
+        <translation type="unfinished">はい</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>No</source>
+        <translation type="unfinished">いいえ</translation>
+    </message>
+</context>
+<context>
     <name>SystemSetting</name>
     <message>
         <location filename="../../SystemSetting.qml" line="+7"/>
@@ -145,7 +186,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../../main.qml" line="+87"/>
+        <location filename="../../main.qml" line="+90"/>
         <source>DESIGN</source>
         <translation type="unfinished">デザイン編集</translation>
     </message>
@@ -170,7 +211,13 @@
         <translation type="unfinished">新規作成</translation>
     </message>
     <message>
+        <location line="+1"/>
         <location line="+4"/>
+        <source>Edits are discarded. are you sure?</source>
+        <translation type="unfinished">編集内容は破棄されます。よろしいですか？</translation>
+    </message>
+    <message>
+        <location line="-1"/>
         <source>Import</source>
         <translation type="unfinished">取込み</translation>
     </message>
@@ -223,7 +270,7 @@ Ground</source>
         <translation type="unfinished">グループ</translation>
     </message>
     <message>
-        <location line="+192"/>
+        <location line="+193"/>
         <source>preview running...</source>
         <translation type="unfinished">プレビューを表示しています…</translation>
     </message>
