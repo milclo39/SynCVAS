@@ -63,7 +63,7 @@ ApplicationWindow {
         network.close()
     }
     // 背景
-    Image{ anchors.fill: parent; source: "qrc:/background.png" }
+    Image{ anchors.fill: parent; source: "bg_01.png" }
 //    Image{ anchors.fill: parent; source: "file:///sdcard/back.png" }
     // 枠
     Repeater {

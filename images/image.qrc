@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>setting.png</file>
-        <file>background.png</file>
         <file>Waiting.png</file>
         <file>bd.png</file>
         <file>cam.png</file>
@@ -65,5 +64,8 @@
         <file>pageprev.png</file>
         <file>plus.png</file>
         <file>slider.png</file>
+        <file>bg_01.png</file>
+        <file>bg_02.png</file>
+        <file>bg_03.png</file>
     </qresource>
 </RCC>

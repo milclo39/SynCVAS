@@ -228,14 +228,19 @@ ApplicationWindow {
         id: backmenu
         anchors.top: topmenu.bottom; anchors.horizontalCenter: parent.horizontalCenter
         anchors.margins: 5
-        width: 216; height: 72
+        width: layout_backmenu.width; height: 72
         visible: topmenu.state === "BackGround"
         RowLayout{
-            Rectangle{width: 72; height: 72; color: "pink"; Text{anchors.centerIn: parent; text:"Single"; color: "white"}
+            id: layout_backmenu
+            Rectangle{width: 72; height: 72; color: "pink"; Text{anchors.centerIn: parent; text: qsTr("Single"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {backimage.source = ""}}}
-            Rectangle{width: 72; height: 72; color: "white"; Image{anchors.fill: parent; source: "background.png"}
-            MouseArea{anchors.fill: parent; onClicked: {backimage.source = "background.png"}}}
-            Rectangle{width: 72; height: 72; color: "pink"; Text{anchors.centerIn: parent; text:"File"; color: "white"}
+            Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_01.png"}
+            MouseArea{anchors.fill: parent; onClicked: {backimage.source = "bg_01.png"}}}
+            Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_02.png"}
+            MouseArea{anchors.fill: parent; onClicked: {backimage.source = "bg_02.png"}}}
+            Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_03.png"}
+            MouseArea{anchors.fill: parent; onClicked: {backimage.source = "bg_03.png"}}}
+            Rectangle{width: 72; height: 72; Image{source: "plus.png"}
             MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
         }
     }
@@ -330,7 +335,7 @@ ApplicationWindow {
         anchors.bottom: parent.bottom
         width: scrWidth - 32; height: scrHeight - 48
         // 背景
-        Image{ id: backimage; anchors.fill: parent; source: "qrc:/background.png" }
+        Image{ id: backimage; anchors.fill: parent; source: "bg_01.png" }
         MouseArea {
             anchors.fill: parent
             onPressed: {    // 背景を触ったら選択解除

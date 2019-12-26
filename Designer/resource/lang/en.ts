@@ -21,28 +21,28 @@
     <message>
         <location filename="../../DeviceSetting.qml" line="61"/>
         <location filename="../../DeviceSetting.qml" line="87"/>
-        <location filename="../../DeviceSetting.qml" line="111"/>
+        <location filename="../../DeviceSetting.qml" line="109"/>
         <source>Projector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="61"/>
         <location filename="../../DeviceSetting.qml" line="87"/>
-        <location filename="../../DeviceSetting.qml" line="111"/>
+        <location filename="../../DeviceSetting.qml" line="109"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="61"/>
         <location filename="../../DeviceSetting.qml" line="87"/>
-        <location filename="../../DeviceSetting.qml" line="111"/>
+        <location filename="../../DeviceSetting.qml" line="109"/>
         <source>player</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="61"/>
         <location filename="../../DeviceSetting.qml" line="87"/>
-        <location filename="../../DeviceSetting.qml" line="111"/>
+        <location filename="../../DeviceSetting.qml" line="109"/>
         <source>Switcher</source>
         <translation type="unfinished"></translation>
     </message>
@@ -50,61 +50,61 @@
         <location filename="../../DeviceSetting.qml" line="61"/>
         <location filename="../../DeviceSetting.qml" line="69"/>
         <location filename="../../DeviceSetting.qml" line="87"/>
-        <location filename="../../DeviceSetting.qml" line="94"/>
-        <location filename="../../DeviceSetting.qml" line="111"/>
-        <location filename="../../DeviceSetting.qml" line="118"/>
-        <location filename="../../DeviceSetting.qml" line="136"/>
+        <location filename="../../DeviceSetting.qml" line="93"/>
+        <location filename="../../DeviceSetting.qml" line="109"/>
+        <location filename="../../DeviceSetting.qml" line="115"/>
+        <location filename="../../DeviceSetting.qml" line="132"/>
         <source>other</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="69"/>
-        <location filename="../../DeviceSetting.qml" line="94"/>
-        <location filename="../../DeviceSetting.qml" line="118"/>
-        <location filename="../../DeviceSetting.qml" line="136"/>
+        <location filename="../../DeviceSetting.qml" line="93"/>
+        <location filename="../../DeviceSetting.qml" line="115"/>
+        <location filename="../../DeviceSetting.qml" line="132"/>
         <source>ELMO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="69"/>
-        <location filename="../../DeviceSetting.qml" line="94"/>
-        <location filename="../../DeviceSetting.qml" line="118"/>
-        <location filename="../../DeviceSetting.qml" line="136"/>
+        <location filename="../../DeviceSetting.qml" line="93"/>
+        <location filename="../../DeviceSetting.qml" line="115"/>
+        <location filename="../../DeviceSetting.qml" line="132"/>
         <source>PANNA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="69"/>
-        <location filename="../../DeviceSetting.qml" line="94"/>
-        <location filename="../../DeviceSetting.qml" line="118"/>
-        <location filename="../../DeviceSetting.qml" line="136"/>
+        <location filename="../../DeviceSetting.qml" line="93"/>
+        <location filename="../../DeviceSetting.qml" line="115"/>
+        <location filename="../../DeviceSetting.qml" line="132"/>
         <source>SQNY</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="69"/>
-        <location filename="../../DeviceSetting.qml" line="94"/>
-        <location filename="../../DeviceSetting.qml" line="118"/>
-        <location filename="../../DeviceSetting.qml" line="136"/>
+        <location filename="../../DeviceSetting.qml" line="93"/>
+        <location filename="../../DeviceSetting.qml" line="115"/>
+        <location filename="../../DeviceSetting.qml" line="132"/>
         <source>RICHON</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DeviceSetting.qml" line="77"/>
-        <location filename="../../DeviceSetting.qml" line="101"/>
-        <location filename="../../DeviceSetting.qml" line="125"/>
-        <location filename="../../DeviceSetting.qml" line="143"/>
-        <location filename="../../DeviceSetting.qml" line="155"/>
+        <location filename="../../DeviceSetting.qml" line="99"/>
+        <location filename="../../DeviceSetting.qml" line="121"/>
+        <location filename="../../DeviceSetting.qml" line="138"/>
+        <location filename="../../DeviceSetting.qml" line="150"/>
         <source>Macro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../DeviceSetting.qml" line="131"/>
+        <location filename="../../DeviceSetting.qml" line="127"/>
         <source>IR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../DeviceSetting.qml" line="149"/>
+        <location filename="../../DeviceSetting.qml" line="144"/>
         <source>Ry</source>
         <translation type="unfinished"></translation>
     </message>
@@ -212,65 +212,70 @@
     </message>
     <message>
         <location filename="../../main.qml" line="130"/>
-        <location filename="../../main.qml" line="134"/>
+        <location filename="../../main.qml" line="139"/>
         <source>Edits are discarded. are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="133"/>
+        <location filename="../../main.qml" line="138"/>
         <source>Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="137"/>
+        <location filename="../../main.qml" line="146"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="141"/>
+        <location filename="../../main.qml" line="154"/>
         <source>Add
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="145"/>
+        <location filename="../../main.qml" line="162"/>
         <source>Remove
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="151"/>
+        <location filename="../../main.qml" line="172"/>
         <source>Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="156"/>
+        <location filename="../../main.qml" line="177"/>
         <source>Back
 Ground</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="161"/>
+        <location filename="../../main.qml" line="182"/>
         <source>Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="166"/>
+        <location filename="../../main.qml" line="187"/>
         <source>Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="171"/>
+        <location filename="../../main.qml" line="192"/>
         <source>Slide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="176"/>
+        <location filename="../../main.qml" line="197"/>
         <source>Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="369"/>
+        <location filename="../../main.qml" line="234"/>
+        <source>Single</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="394"/>
         <source>preview running...</source>
         <translation type="unfinished"></translation>
     </message>
