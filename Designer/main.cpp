@@ -39,13 +39,10 @@ int main(int argc, char *argv[])
 #if 0
 	QQmlApplicationEngine engine;
 	engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-	if (engine.rootObjects().isEmpty()){
-		return -1;
-	}
 #else
-	ClView *m_clView = new ClView();
-	m_clView->setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+    ClView view;
+    QObject::connect(view.engine(), SIGNAL(quit()), qApp, SLOT(quit()));
+    view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
 #endif
-
 	return app.exec();
 }

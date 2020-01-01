@@ -186,7 +186,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../../main.qml" line="+90"/>
+        <location filename="../../main.qml" line="+96"/>
         <source>DESIGN</source>
         <translation type="unfinished">デザイン編集</translation>
     </message>
@@ -206,7 +206,7 @@
         <translation type="unfinished">システム設定</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+20"/>
         <source>Create</source>
         <translation type="unfinished">新規作成</translation>
     </message>
@@ -270,7 +270,7 @@ Ground</source>
         <translation type="unfinished">グループ</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+38"/>
         <source>Single</source>
         <translation type="unfinished">単色</translation>
     </message>
@@ -278,6 +278,11 @@ Ground</source>
         <location line="+160"/>
         <source>preview running...</source>
         <translation type="unfinished">プレビューを表示しています…</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Are you sure you want to save?</source>
+        <translation type="unfinished">保存してよろしいですか？</translation>
     </message>
 </context>
 </TS>

@@ -32,6 +32,7 @@ ApplicationWindow {
     property var curImageMimi: undefined
     property string curIpAddr: device.curIpAddr
     property string curMacAddr: ""
+    property bool flgSave: true
 
     Component.onCompleted: {
         jsonobj.readCurrentJson();
@@ -78,6 +79,11 @@ ApplicationWindow {
     Helper { id: helper }
     JsonObj { id: jsonobj }
     onClosing: {
+        if(flgSave){
+            msgendcheck.visible = true
+            close.accepted = false
+            flgSave = false
+        }
     }
     // モードメニュー
     RowLayout{
@@ -104,10 +110,6 @@ ApplicationWindow {
             color: if(modemenu.state === "SYSTEM") {"blue"} else {"black"}
             Text{anchors.centerIn: parent; text:qsTr("SYSTEM"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {modemenu.state = "SYSTEM"}}
-        }
-        Rectangle{Layout.fillHeight: true; width: 30; color: "black"
-            Text{anchors.centerIn: parent; text:"x"; color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {msgend.visible = true}}
         }
         onStateChanged: {
             helper.execProcess(modemenu.state === "PREVIEW")    // プレビュー実行
@@ -412,12 +414,13 @@ ApplicationWindow {
         onSigNoClick: {Qt.quit()}
     }
     MessageBox{
-        id: msgend
+        id: msgendcheck
         visible: false
         anchors.centerIn: parent
         z: 100
-        onSigYesClick: {jsonobj.writeCurrentJson(); Qt.quit()}
-        onSigNoClick: {Qt.quit()}
+        messageText: qsTr("Are you sure you want to save?")
+        onSigYesClick: {jsonobj.writeCurrentJson(); _root.close()}
+        onSigNoClick: {_root.close()}
     }
     FileDialog {
         id: fileDialog

@@ -186,97 +186,102 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../../main.qml" line="90"/>
+        <location filename="../../main.qml" line="96"/>
         <source>DESIGN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="95"/>
+        <location filename="../../main.qml" line="101"/>
         <source>DEVICE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="100"/>
+        <location filename="../../main.qml" line="106"/>
         <source>PREVIEW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="105"/>
+        <location filename="../../main.qml" line="111"/>
         <source>SYSTEM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="129"/>
+        <location filename="../../main.qml" line="131"/>
         <source>Create</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="130"/>
-        <location filename="../../main.qml" line="139"/>
+        <location filename="../../main.qml" line="132"/>
+        <location filename="../../main.qml" line="141"/>
         <source>Edits are discarded. are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="138"/>
+        <location filename="../../main.qml" line="140"/>
         <source>Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="146"/>
+        <location filename="../../main.qml" line="148"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="154"/>
+        <location filename="../../main.qml" line="156"/>
         <source>Add
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="162"/>
+        <location filename="../../main.qml" line="164"/>
         <source>Remove
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="172"/>
+        <location filename="../../main.qml" line="174"/>
         <source>Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="177"/>
+        <location filename="../../main.qml" line="179"/>
         <source>Back
 Ground</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="182"/>
+        <location filename="../../main.qml" line="184"/>
         <source>Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="187"/>
+        <location filename="../../main.qml" line="189"/>
         <source>Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="192"/>
+        <location filename="../../main.qml" line="194"/>
         <source>Slide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="197"/>
+        <location filename="../../main.qml" line="199"/>
         <source>Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="234"/>
+        <location filename="../../main.qml" line="237"/>
         <source>Single</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="394"/>
+        <location filename="../../main.qml" line="397"/>
         <source>preview running...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="421"/>
+        <source>Are you sure you want to save?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
