@@ -23,6 +23,12 @@ ApplicationWindow {
     property rect tmpRect;
     property string nonselcolor: "skyblue"
     property string selectcolor: "blue"
+    property string btnSource1: "bd.png"
+    property string btnSource2: "cam.png"
+    property string btnSource3: "dvi.png"
+    property string btnSource4: "hdmi.png"
+    property string btnSource5: "pc.png"
+    property string btnSource6: "rgb.png"
 
     //プロパティ
     property variant path: []
@@ -250,30 +256,28 @@ ApplicationWindow {
     Rectangle{
         id: submenu
         anchors.top: topmenu.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
         anchors.margins: 5
+        anchors.horizontalCenter: parent.horizontalCenter
         width: 600; height: 72
         visible: topmenu.state === "Button"
-        RowLayout{
-            Image{id: btn_pageprev; source: "pageprev.png"}
-            Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_bd; source: "bd.png"}}
-            Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_cam; source: "cam.png"}}
-            Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_dvi; source: "dvi.png"}}
-            Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_hdmi; source: "hdmi.png"}}
-            Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_pc; source: "pc.png"}}
-            Rectangle{width: 72; height: 72; color: "pink"; Image{id: btn_rgb; source: "rgb.png"}}
-            Image{id: btn_pagenext; source: "pagenext.png"}
-            Rectangle{width: 72; height: 72; Image{id: btn_plus; source: "plus.png"}
-            MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
-        }
+        Rectangle{x:   0; width: 72; height: 72; Image{source: "pageprev.png"}}
+        Rectangle{x:  80; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource1}}
+        Rectangle{x: 160; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource2}}
+        Rectangle{x: 240; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource3}}
+        Rectangle{x: 320; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource4}}
+        Rectangle{x: 400; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource5}}
+        Rectangle{x: 480; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource6}}
+        Rectangle{x: 560; width: 72; height: 72; Image{source: "pagenext.png"}}
+        Rectangle{x: 640; width: 72; height: 72; Image{source: "plus.png"}
+        MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
     }
     // 追加ボタン
-    AddButton{x: 160; y: submenu.y; width: btn_bd.width; height: 72; selBtnImage: btn_bd.source; visible: submenu.visible}
-    AddButton{x: 240; y: submenu.y; width: btn_cam.width; height: 72; selBtnImage: btn_cam.source; visible: submenu.visible}
-    AddButton{x: 320; y: submenu.y; width: btn_dvi.width; height: 72; selBtnImage: btn_dvi.source; visible: submenu.visible}
-    AddButton{x: 400; y: submenu.y; width: btn_hdmi.width; height: 72; selBtnImage: btn_hdmi.source; visible: submenu.visible}
-    AddButton{x: 480; y: submenu.y; width: btn_pc.width; height: 72; selBtnImage: btn_pc.source; visible: submenu.visible}
-    AddButton{x: 560; y: submenu.y; width: btn_rgb.width; height: 72; selBtnImage: btn_rgb.source; visible: submenu.visible}
+    AddButton{x: submenu.x + 80; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource1; visible: submenu.visible}
+    AddButton{x: submenu.x + 160; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource2; visible: submenu.visible}
+    AddButton{x: submenu.x + 240; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource3; visible: submenu.visible}
+    AddButton{x: submenu.x + 320; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource4; visible: submenu.visible}
+    AddButton{x: submenu.x + 400; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource5; visible: submenu.visible}
+    AddButton{x: submenu.x + 480; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource6; visible: submenu.visible}
 
     // テキストメニュー
     Rectangle{
