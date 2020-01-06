@@ -11,5 +11,6 @@
         <file>MessageBox.qml</file>
         <file>DeviceSetting.qml</file>
         <file>EdtSlider.qml</file>
+        <file>ButtonSetting.qml</file>
     </qresource>
 </RCC>

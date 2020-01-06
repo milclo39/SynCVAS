@@ -379,6 +379,9 @@ ApplicationWindow {
             model: ListModel {}
             EdtButton{
                 id: _obj
+                onSigDoubleClicked: {
+                    button.visible = true
+                }
             }
         }
     }
@@ -408,6 +411,17 @@ ApplicationWindow {
         height: parent.height - modemenu.height
         visible: modemenu.state === "SYSTEM"
         z: 100
+    }
+    // ボタン設定画面
+    ButtonSetting{
+        id: button
+        anchors.bottom: parent.bottom
+        width: parent.width
+        height: parent.height - modemenu.height
+        visible: false
+        z: 100
+        onSigOkClick: {visible = false}
+        onSigCancelClick: {visible = false}
     }
     MessageBox{
         id: msg

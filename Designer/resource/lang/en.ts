@@ -2,6 +2,124 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
+    <name>ButtonSetting</name>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="7"/>
+        <source>ButtonSetting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="23"/>
+        <source>ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="29"/>
+        <source>Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="33"/>
+        <source>Projector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="33"/>
+        <source>Monitor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="33"/>
+        <source>player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="33"/>
+        <source>Switcher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="33"/>
+        <source>other</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="39"/>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="48"/>
+        <source>Text Position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="52"/>
+        <source>UP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="52"/>
+        <source>DOWN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="58"/>
+        <source>Text Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="67"/>
+        <source>Button Source</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="76"/>
+        <source>Back Button Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="80"/>
+        <source>RED</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="80"/>
+        <source>GREEN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="86"/>
+        <source>Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="90"/>
+        <source>[ELMO]Projector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="90"/>
+        <source>[ELMO]Switcher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="96"/>
+        <source>Press Action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="100"/>
+        <source>NONE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="100"/>
+        <source>WIDE</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>DeviceSetting</name>
     <message>
         <location filename="../../DeviceSetting.qml" line="10"/>
@@ -112,22 +230,22 @@
 <context>
     <name>EdtButton</name>
     <message>
-        <location filename="../../EdtButton.qml" line="55"/>
+        <location filename="../../EdtButton.qml" line="57"/>
         <source>Cut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../EdtButton.qml" line="56"/>
+        <location filename="../../EdtButton.qml" line="58"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../EdtButton.qml" line="57"/>
+        <location filename="../../EdtButton.qml" line="59"/>
         <source>Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../EdtButton.qml" line="58"/>
+        <location filename="../../EdtButton.qml" line="60"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
@@ -186,101 +304,101 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../../main.qml" line="96"/>
+        <location filename="../../main.qml" line="102"/>
         <source>DESIGN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="101"/>
+        <location filename="../../main.qml" line="107"/>
         <source>DEVICE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="106"/>
+        <location filename="../../main.qml" line="112"/>
         <source>PREVIEW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="111"/>
+        <location filename="../../main.qml" line="117"/>
         <source>SYSTEM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="131"/>
+        <location filename="../../main.qml" line="137"/>
         <source>Create</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="132"/>
-        <location filename="../../main.qml" line="141"/>
+        <location filename="../../main.qml" line="138"/>
+        <location filename="../../main.qml" line="147"/>
         <source>Edits are discarded. are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="140"/>
+        <location filename="../../main.qml" line="146"/>
         <source>Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="148"/>
+        <location filename="../../main.qml" line="154"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="156"/>
+        <location filename="../../main.qml" line="162"/>
         <source>Add
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="164"/>
+        <location filename="../../main.qml" line="170"/>
         <source>Remove
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="174"/>
+        <location filename="../../main.qml" line="180"/>
         <source>Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="179"/>
+        <location filename="../../main.qml" line="185"/>
         <source>Back
 Ground</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="184"/>
+        <location filename="../../main.qml" line="190"/>
         <source>Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="189"/>
+        <location filename="../../main.qml" line="195"/>
         <source>Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="194"/>
+        <location filename="../../main.qml" line="200"/>
         <source>Slide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="199"/>
+        <location filename="../../main.qml" line="205"/>
         <source>Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="237"/>
+        <location filename="../../main.qml" line="243"/>
         <source>Single</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="397"/>
+        <location filename="../../main.qml" line="404"/>
         <source>preview running...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="421"/>
+        <location filename="../../main.qml" line="437"/>
         <source>Are you sure you want to save?</source>
         <translation type="unfinished"></translation>
     </message>

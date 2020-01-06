@@ -2,6 +2,7 @@ import QtQuick 2.0
 import QtQuick.Controls 2.0
 
 Rectangle {
+    signal sigDoubleClicked()
     id: _obj
     color: if(model.src !== "") {"transparent"} else {"blue"}
     x: model.x; y: model.y; width: model.w; height: model.h
@@ -93,6 +94,9 @@ Rectangle {
                 else{
                     jsonobj.execMacro(model.id)
                 }
+            }
+            onDoubleClicked: {
+                sigDoubleClicked()
             }
             onWheel: {  //ホイール動作
                 _obj.width += wheel.angleDelta.y / 120
