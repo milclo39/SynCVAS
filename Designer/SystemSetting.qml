@@ -10,7 +10,7 @@ Rectangle{
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.margins: 10
-        width: 768; height: 432
+        width: parent.width; height: 600
         color: "skyblue"
         Rectangle{
             Column{

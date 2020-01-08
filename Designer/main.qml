@@ -249,7 +249,7 @@ ApplicationWindow {
             Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_03.png"}
             MouseArea{anchors.fill: parent; onClicked: {backimage.source = "bg_03.png"}}}
             Rectangle{width: 72; height: 72; Image{source: "plus.png"}
-            MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
+            MouseArea{anchors.fill: parent; onClicked: {/*fileDialog.visible = true*/}}}
         }
     }
     // ボタンメニュー
@@ -269,7 +269,7 @@ ApplicationWindow {
         Rectangle{x: 480; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource6}}
         Rectangle{x: 560; width: 72; height: 72; Image{source: "pagenext.png"}}
         Rectangle{x: 640; width: 72; height: 72; Image{source: "plus.png"}
-        MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
+        MouseArea{anchors.fill: parent; onClicked: {/*fileDialog.visible = true*/}}}
     }
     // 追加ボタン
     AddButton{x: submenu.x + 80; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource1; visible: submenu.visible}
@@ -322,16 +322,32 @@ ApplicationWindow {
     AddGroup{x: 160; y: submenugroup.y; width: submenugroup.width; height: 72; visible: submenugroup.visible}
 
     Rectangle{
+        id: page1
         anchors.left: _screen.right
         anchors.top: _screen.top
         width: 32
         height: 32
-        color: "silver"
+        color: "blue"
         Text{
             anchors.centerIn: parent
             text: "1"
             color: "white"
         }
+        MouseArea{anchors.fill: parent; onClicked: {parent.color = "blue";page2.color = "silver"}}
+    }
+    Rectangle{
+        id: page2
+        anchors.left: _screen.right
+        anchors.top: page1.bottom
+        width: 32
+        height: 32
+        color: "silver"
+        Text{
+            anchors.centerIn: parent
+            text: "2"
+            color: "white"
+        }
+        MouseArea{anchors.fill: parent; onClicked: {parent.color = "blue";page1.color = "silver"}}
     }
     // スクリーン
     Rectangle{
@@ -440,12 +456,12 @@ ApplicationWindow {
         onSigYesClick: {jsonobj.writeCurrentJson(); _root.close()}
         onSigNoClick: {_root.close()}
     }
-    FileDialog {
+/*    FileDialog {
         id: fileDialog
         folder: shortcuts.pictures
         onAccepted: {
             console.log("file: " + fileUrls)
         }
         onRejected: {}
-    }
+    }*/
 }

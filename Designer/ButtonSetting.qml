@@ -11,7 +11,7 @@ Rectangle{
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.margins: 10
-        width: 1024; height: 600
+        width: parent.width; height: 600
         color: "skyblue"
         Text{id: title; font.pixelSize: 24; text: qsTr("ButtonSetting")}
         Grid{

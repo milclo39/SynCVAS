@@ -36,13 +36,13 @@ int main(int argc, char *argv[])
 	supportLocalize();
 	qmlRegisterType<Helper>("Helper", 1, 0, "Helper");
 	qmlRegisterType<JsonObj>("JsonObj", 1, 0, "JsonObj");
-#if 0
+#if 1
 	QQmlApplicationEngine engine;
 	engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 #else
-    ClView view;
-    QObject::connect(view.engine(), SIGNAL(quit()), qApp, SLOT(quit()));
-    view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+	ClView view;
+	QObject::connect(view.engine(), SIGNAL(quit()), qApp, SLOT(quit()));
+	view.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
 #endif
 	return app.exec();
 }
