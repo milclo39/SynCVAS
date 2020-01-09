@@ -16,7 +16,7 @@ ApplicationWindow {
     property int pjport: 4352
     property int scrWidth: 1024//800
     property int scrHeight: 600//480
-    property int menuHeight: 120
+    property int menuHeight: 138
     property int i: 0
     property int mimisize: 8
     property string mimicolor: "navy"
@@ -241,7 +241,7 @@ ApplicationWindow {
         RowLayout{
             id: layout_backmenu
             Rectangle{width: 72; height: 72; color: "pink"; Text{anchors.centerIn: parent; text: qsTr("Single"); color: "white"}
-            MouseArea{anchors.fill: parent; onClicked: {backimage.source = ""}}}
+            MouseArea{anchors.fill: parent; onClicked: {colorDialog.visible = true; backimage.source = ""}}}
             Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_01.png"}
             MouseArea{anchors.fill: parent; onClicked: {backimage.source = "bg_01.png"}}}
             Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_02.png"}
@@ -249,7 +249,7 @@ ApplicationWindow {
             Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_03.png"}
             MouseArea{anchors.fill: parent; onClicked: {backimage.source = "bg_03.png"}}}
             Rectangle{width: 72; height: 72; Image{source: "plus.png"}
-            MouseArea{anchors.fill: parent; onClicked: {/*fileDialog.visible = true*/}}}
+            MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
         }
     }
     // ボタンメニュー
@@ -269,7 +269,7 @@ ApplicationWindow {
         Rectangle{x: 480; width: 72; height: 72; color: "lightgreen"; Image{source: btnSource6}}
         Rectangle{x: 560; width: 72; height: 72; Image{source: "pagenext.png"}}
         Rectangle{x: 640; width: 72; height: 72; Image{source: "plus.png"}
-        MouseArea{anchors.fill: parent; onClicked: {/*fileDialog.visible = true*/}}}
+        MouseArea{anchors.fill: parent; onClicked: {fileDialog.visible = true}}}
     }
     // 追加ボタン
     AddButton{x: submenu.x + 80; y: submenu.y; width: 72; height: 72; selBtnImage: btnSource1; visible: submenu.visible}
@@ -321,6 +321,7 @@ ApplicationWindow {
     // 追加テキスト
     AddGroup{x: 160; y: submenugroup.y; width: submenugroup.width; height: 72; visible: submenugroup.visible}
 
+    // ページメニュー
     Rectangle{
         id: page1
         anchors.left: _screen.right
@@ -352,7 +353,6 @@ ApplicationWindow {
     // スクリーン
     Rectangle{
         id: _screen
-        x: 0; y: menuHeight
         anchors.left: parent.left
         anchors.bottom: parent.bottom
         width: scrWidth - 32; height: scrHeight - 48
@@ -456,12 +456,18 @@ ApplicationWindow {
         onSigYesClick: {jsonobj.writeCurrentJson(); _root.close()}
         onSigNoClick: {_root.close()}
     }
-/*    FileDialog {
+    FileDialog {
         id: fileDialog
         folder: shortcuts.pictures
         onAccepted: {
             console.log("file: " + fileUrls)
         }
         onRejected: {}
-    }*/
+    }
+    ColorDialog {
+        id: colorDialog
+        title: qsTr("Please choose a color")
+        onAccepted: { _screen.color = color }
+        onRejected: {}
+    }
 }

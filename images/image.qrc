@@ -8,7 +8,6 @@
         <file>hdmi.png</file>
         <file>mt0.png</file>
         <file>mt1.png</file>
-        <file>ntfs.png</file>
         <file>pc.png</file>
         <file>rgb.png</file>
         <file>btnbl_01.png</file>
@@ -67,5 +66,17 @@
         <file>bg_01.png</file>
         <file>bg_02.png</file>
         <file>bg_03.png</file>
+        <file>video.png</file>
+        <file>light.png</file>
+        <file>screen.png</file>
+        <file>sound.png</file>
+        <file>monitor.png</file>
+        <file>power.png</file>
+        <file>btnwh_05.png</file>
+        <file>btnwh_06.png</file>
+        <file>btnwh_04.png</file>
+        <file>btnwh_03.png</file>
+        <file>btnwh_02.png</file>
+        <file>btnwh_01.png</file>
     </qresource>
 </RCC>

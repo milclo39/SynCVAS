@@ -97,6 +97,9 @@ public:
 	Q_INVOKABLE QString getSrc(int idx){return m_stBtn[idx].src;}
 	Q_INVOKABLE QString getCmd(int idx){return m_stBtn[idx].cmd;}
 
+	Q_INVOKABLE QString getIpAddr(int idx){return m_stIfbox[idx].ipaddr;}
+	Q_INVOKABLE qint32 getPort(int idx){return m_stIfbox[idx].port;}
+
 	Q_INVOKABLE QString getDevStr(int id)
 	{
 		for(int idx = 0; idx < 100; idx++){
