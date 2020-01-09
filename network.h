@@ -67,6 +67,8 @@ public:
 	}
 	Q_INVOKABLE void write(QString data)
 	{
+		m_pclSocket->write(StrToArray("02"));
+		m_pclSocket->write(QString("@").toLocal8Bit());
 		m_arReadData = "";
 		QStringList strlist = data.split("\\");
 		if(strlist.count() < 2){
@@ -84,6 +86,7 @@ public:
 			}
 			m_pclSocket->write(arData);
 		}
+		m_pclSocket->write(StrToArray("03"));
 	}
 	Q_INVOKABLE QByteArray read(void)
 	{

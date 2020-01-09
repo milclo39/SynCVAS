@@ -58,9 +58,6 @@ ApplicationWindow {
     Network { id: network }
     JsonObj { id: jsonobj }
     onClosing: {
-        network.setIpaddr(txtIpaddr.text)
-        network.setMacaddr(txtMacaddr.text)
-        network.close()
     }
     // 背景
     Image{ anchors.fill: parent; source: "bg_01.png" }
@@ -109,9 +106,10 @@ ApplicationWindow {
 //                drag.target: parent
                 onClicked: {
                     if(model.cmd !== ""){
-                        network.connectToHost(txtIpaddr.text, pxport)
-                        network.write(model.cmd)
-                        //network.wakeOnLan(txtIpaddr.text, txtMacaddr.text)
+                        if(jsonobj.getIpAddr(0) !== ""){
+                            network.connectToHost(jsonobj.getIpAddr(0), jsonobj.getPort(0))
+                            network.write(model.cmd)
+                        }
                     }
                     else{
                         jsonobj.execMacro(model.id)
@@ -142,8 +140,10 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     from: 0;to: 10;stepSize: 1;value: 5
                     onPositionChanged: {
-                        network.connectToHost(txtIpaddr.text, pxport)
-                        network.write("{\"audio volume\":"+value+"}")
+                        if(jsonobj.getIpAddr(0) !== ""){
+                            network.connectToHost(jsonobj.getIpAddr(0), jsonobj.getPort(0))
+                            network.write("{\"audio volume\":"+value+"}")
+                        }
                     }
                     hoverEnabled: true
                     handle: Rectangle { // スライダーつまみの色変えテク
@@ -169,16 +169,18 @@ ApplicationWindow {
                         anchors.fill: parent
                         hoverEnabled: true
                         onClicked: {
-                            network.connectToHost(txtIpaddr.text, pxport)
-                            if(mutebtn.state === "on"){
-                                network.write("{\"audio volume\":"+slider.value+"}")
-                                slider.enabled = true
-                                mutebtn.state = "off"
-                            }
-                            else{
-                                network.write("{\"audio volume\":0}")
-                                slider.enabled = false
-                                mutebtn.state = "on"
+                            if(jsonobj.getIpAddr(0) !== ""){
+                                network.connectToHost(jsonobj.getIpAddr(0), jsonobj.getPort(0))
+                                if(mutebtn.state === "on"){
+                                    network.write("{\"audio volume\":"+slider.value+"}")
+                                    slider.enabled = true
+                                    mutebtn.state = "off"
+                                }
+                                else{
+                                    network.write("{\"audio volume\":0}")
+                                    slider.enabled = false
+                                    mutebtn.state = "on"
+                                }
                             }
                         }
                         Image{
@@ -220,43 +222,6 @@ ApplicationWindow {
         id: setting
         visible: false
         anchors.fill: parent
-        MouseArea {
-            anchors.fill: parent
-            drag.target: parent
-        }
-        Column {
-            spacing: 16
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            Row{
-                Label{
-                    anchors.verticalCenter: parent.verticalCenter
-                    text: "IP Address:"
-                }
-                TextField {
-                    id: txtIpaddr
-                    width: 200
-                    font.pointSize: 16
-                    placeholderText: qsTr("*.*.*.*")
-                    selectByMouse: true
-                    text: network.getIpaddr()
-                }
-            }
-            Row{
-                Label{
-                    anchors.verticalCenter: parent.verticalCenter
-                    text: "MAC Address:"
-                }
-                TextField {
-                    id: txtMacaddr
-                    width: 200
-                    font.pointSize: 16
-                    placeholderText: qsTr("************")
-                    selectByMouse: true
-                    text: network.getMacaddr()
-                }
-            }
-        }
         // 終了
         Image {
             id: endbtn
