@@ -4,12 +4,32 @@
 <context>
     <name>ButtonSetting</name>
     <message>
-        <location filename="../../ButtonSetting.qml" line="+7"/>
+        <location filename="../../ButtonSetting.qml" line="+10"/>
+        <source>add</source>
+        <translation type="unfinished">追加</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>edit</source>
+        <translation type="unfinished">編集</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>up</source>
+        <translation type="unfinished">↑</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>down</source>
+        <translation type="unfinished">↓</translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>ButtonSetting</source>
         <translation type="unfinished">ボタン設定</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+10"/>
         <source>ID</source>
         <translation type="unfinished"></translation>
     </message>
@@ -61,7 +81,7 @@
     <message>
         <location line="+0"/>
         <source>DOWN</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">下</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -117,6 +137,16 @@
         <location line="+0"/>
         <source>WIDE</source>
         <translation type="unfinished">ふくらむ</translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -230,7 +260,7 @@
 <context>
     <name>EdtButton</name>
     <message>
-        <location filename="../../EdtButton.qml" line="+57"/>
+        <location filename="../../EdtButton.qml" line="+56"/>
         <source>Cut</source>
         <translation type="unfinished">切り取り</translation>
     </message>
@@ -304,7 +334,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../../main.qml" line="+102"/>
+        <location filename="../../main.qml" line="+105"/>
         <source>DESIGN</source>
         <translation type="unfinished">デザイン編集</translation>
     </message>
@@ -388,19 +418,29 @@ Ground</source>
         <translation type="unfinished">グループ</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+21"/>
+        <source>Transparent</source>
+        <translation type="unfinished">透過</translation>
+    </message>
+    <message>
+        <location line="+25"/>
         <source>Single</source>
         <translation type="unfinished">単色</translation>
     </message>
     <message>
-        <location line="+161"/>
+        <location line="+177"/>
         <source>preview running...</source>
         <translation type="unfinished">プレビューを表示しています…</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+35"/>
         <source>Are you sure you want to save?</source>
         <translation type="unfinished">保存してよろしいですか？</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Please choose a color</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

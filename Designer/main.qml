@@ -39,6 +39,9 @@ ApplicationWindow {
     property string curIpAddr: device.curIpAddr
     property string curMacAddr: ""
     property bool flgSave: true
+    
+    property int state_back: 0
+    property int state_style: 0
 
     Component.onCompleted: {
         jsonobj.readCurrentJson();
@@ -223,12 +226,20 @@ ApplicationWindow {
         visible: topmenu.state === "Style"
         RowLayout{
             anchors.fill: parent
-            Image{source: "btngr_01.png"}
-            Image{source: "btngr_02.png"}
-            Image{source: "btngr_03.png"}
-            Image{source: "btngr_04.png"}
-            Image{source: "btngr_05.png"}
-            Image{source: "btngr_06.png"}
+            Rectangle{width: 72; height: 72; color: "black"; Text{anchors.centerIn: parent; text: qsTr("Transparent"); color: "white"}
+            MouseArea{anchors.fill: parent; onClicked: {state_style = 0}}}
+            Rectangle{width: 72; height: 72; Image{anchors.fill: parent; source: "btngr_01.png"}
+            MouseArea{anchors.fill: parent; onClicked: {state_style = 1}}}
+            Rectangle{width: 72; height: 72; Image{anchors.fill: parent; source: "btngr_02.png"}
+            MouseArea{anchors.fill: parent; onClicked: {state_style = 2}}}
+            Rectangle{width: 72; height: 72; Image{anchors.fill: parent; source: "btngr_03.png"}
+            MouseArea{anchors.fill: parent; onClicked: {state_style = 3}}}
+            Rectangle{width: 72; height: 72; Image{anchors.fill: parent; source: "btngr_04.png"}
+            MouseArea{anchors.fill: parent; onClicked: {state_style = 4}}}
+            Rectangle{width: 72; height: 72; Image{anchors.fill: parent; source: "btngr_05.png"}
+            MouseArea{anchors.fill: parent; onClicked: {state_style = 5}}}
+            Rectangle{width: 72; height: 72; Image{anchors.fill: parent; source: "btngr_06.png"}
+            MouseArea{anchors.fill: parent; onClicked: {state_style = 6}}}
         }
     }
     // 背景サブメニュー   
@@ -240,7 +251,7 @@ ApplicationWindow {
         visible: topmenu.state === "BackGround"
         RowLayout{
             id: layout_backmenu
-            Rectangle{width: 72; height: 72; color: "pink"; Text{anchors.centerIn: parent; text: qsTr("Single"); color: "white"}
+            Rectangle{width: 72; height: 72; color: "lightgreen"; Text{anchors.centerIn: parent; text: qsTr("Single"); color: "white"}
             MouseArea{anchors.fill: parent; onClicked: {colorDialog.visible = true; backimage.source = ""}}}
             Rectangle{width: 123; height: 72; color: "white"; Image{anchors.fill: parent; source: "bg_01.png"}
             MouseArea{anchors.fill: parent; onClicked: {backimage.source = "bg_01.png"}}}

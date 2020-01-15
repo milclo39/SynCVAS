@@ -18,6 +18,7 @@ Rectangle{
             bak_y = parent.y
         }
         onReleased: {
+            var strSrc = "btngr_0"+state_style+".png"
             parent.border.width = 0
             cursorShape = 0
             var i = jsonobj.addObjCount()
@@ -29,7 +30,7 @@ Rectangle{
                 ,"id": 0,"type": "push"
                 ,"x": tmpRect.x, "y": tmpRect.y, "w": tmpRect.width, "h": tmpRect.height
                 ,"text": "button", "textpos": 0
-                ,"src": "btngr_01.png", "cmd": "command"
+                ,"src": strSrc, "cmd": "command"
                                      ,"image": selBtnImage
             })
             // ここで登録を行う

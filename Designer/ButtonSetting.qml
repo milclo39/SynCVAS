@@ -1,11 +1,16 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
+import QtQuick.Layouts 1.11
 
 Rectangle{
     signal sigOkClick()
     signal sigCancelClick()
     property int cmbWidth: 200
     property int btnWidth: 100
+    property var hoge: [{ foo: 203, bar: "power on", moo: qsTr("add")},
+                        { foo: 204, bar: "power off", moo: qsTr("edit")},
+                        { foo: 205, bar: "", moo: qsTr("up")},
+                        { foo: 206, bar: "", moo: qsTr("down")}]
     Rectangle{
         anchors.left: parent.left
         anchors.bottom: parent.bottom
@@ -107,12 +112,48 @@ Rectangle{
             }
         }
         Rectangle{
-            color: "white"
             anchors.top: main.top
             anchors.left: main.right
             anchors.leftMargin: 10
             width: main.width
             height: main.height
+            GridLayout {
+                id: grid
+//                anchors.fill: parent
+                columns: 3
+                rowSpacing: 10
+                columnSpacing: 10
+                anchors.margins: 10
+                Repeater {
+                    model: hoge
+                    Label {
+                        Layout.row: index
+                        Layout.column: 0
+                        font.pointSize: 16
+                        text: modelData.foo
+                    }
+                }
+                Repeater {
+                    model: hoge
+                    TextField {
+                        Layout.row: index
+                        Layout.column: 1
+                        width: 200
+                        font.pointSize: 16
+                        selectByMouse: true
+                        text: modelData.bar
+                    }
+                }
+                Repeater {
+                    model: hoge
+                    Button{
+                        Layout.row: index
+                        Layout.column: 2
+                        width: cmbWidth
+                        text: modelData.moo
+                    }
+                }
+            }
         }
 
         Row{

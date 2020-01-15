@@ -4,118 +4,148 @@
 <context>
     <name>ButtonSetting</name>
     <message>
-        <location filename="../../ButtonSetting.qml" line="7"/>
+        <location filename="../../ButtonSetting.qml" line="10"/>
+        <source>add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="11"/>
+        <source>edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="12"/>
+        <source>up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="13"/>
+        <source>down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="21"/>
         <source>ButtonSetting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="23"/>
+        <location filename="../../ButtonSetting.qml" line="31"/>
         <source>ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="29"/>
+        <location filename="../../ButtonSetting.qml" line="37"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="33"/>
+        <location filename="../../ButtonSetting.qml" line="41"/>
         <source>Projector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="33"/>
+        <location filename="../../ButtonSetting.qml" line="41"/>
         <source>Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="33"/>
+        <location filename="../../ButtonSetting.qml" line="41"/>
         <source>player</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="33"/>
+        <location filename="../../ButtonSetting.qml" line="41"/>
         <source>Switcher</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="33"/>
+        <location filename="../../ButtonSetting.qml" line="41"/>
         <source>other</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="39"/>
+        <location filename="../../ButtonSetting.qml" line="47"/>
         <source>Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="48"/>
+        <location filename="../../ButtonSetting.qml" line="56"/>
         <source>Text Position</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="52"/>
+        <location filename="../../ButtonSetting.qml" line="60"/>
         <source>UP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="52"/>
+        <location filename="../../ButtonSetting.qml" line="60"/>
         <source>DOWN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="58"/>
+        <location filename="../../ButtonSetting.qml" line="66"/>
         <source>Text Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="67"/>
+        <location filename="../../ButtonSetting.qml" line="75"/>
         <source>Button Source</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="76"/>
+        <location filename="../../ButtonSetting.qml" line="84"/>
         <source>Back Button Color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="80"/>
+        <location filename="../../ButtonSetting.qml" line="88"/>
         <source>RED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="80"/>
+        <location filename="../../ButtonSetting.qml" line="88"/>
         <source>GREEN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="86"/>
+        <location filename="../../ButtonSetting.qml" line="94"/>
         <source>Device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="90"/>
+        <location filename="../../ButtonSetting.qml" line="98"/>
         <source>[ELMO]Projector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="90"/>
+        <location filename="../../ButtonSetting.qml" line="98"/>
         <source>[ELMO]Switcher</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="96"/>
+        <location filename="../../ButtonSetting.qml" line="104"/>
         <source>Press Action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="100"/>
+        <location filename="../../ButtonSetting.qml" line="108"/>
         <source>NONE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ButtonSetting.qml" line="100"/>
+        <location filename="../../ButtonSetting.qml" line="108"/>
         <source>WIDE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="165"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ButtonSetting.qml" line="172"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -230,22 +260,22 @@
 <context>
     <name>EdtButton</name>
     <message>
-        <location filename="../../EdtButton.qml" line="57"/>
+        <location filename="../../EdtButton.qml" line="56"/>
         <source>Cut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../EdtButton.qml" line="58"/>
+        <location filename="../../EdtButton.qml" line="57"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../EdtButton.qml" line="59"/>
+        <location filename="../../EdtButton.qml" line="58"/>
         <source>Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../EdtButton.qml" line="60"/>
+        <location filename="../../EdtButton.qml" line="59"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
@@ -304,102 +334,112 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../../main.qml" line="102"/>
+        <location filename="../../main.qml" line="105"/>
         <source>DESIGN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="107"/>
+        <location filename="../../main.qml" line="110"/>
         <source>DEVICE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="112"/>
+        <location filename="../../main.qml" line="115"/>
         <source>PREVIEW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="117"/>
+        <location filename="../../main.qml" line="120"/>
         <source>SYSTEM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="137"/>
+        <location filename="../../main.qml" line="140"/>
         <source>Create</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="138"/>
-        <location filename="../../main.qml" line="147"/>
+        <location filename="../../main.qml" line="141"/>
+        <location filename="../../main.qml" line="150"/>
         <source>Edits are discarded. are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="146"/>
+        <location filename="../../main.qml" line="149"/>
         <source>Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="154"/>
+        <location filename="../../main.qml" line="157"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="162"/>
+        <location filename="../../main.qml" line="165"/>
         <source>Add
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="170"/>
+        <location filename="../../main.qml" line="173"/>
         <source>Remove
 Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="180"/>
+        <location filename="../../main.qml" line="183"/>
         <source>Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="185"/>
+        <location filename="../../main.qml" line="188"/>
         <source>Back
 Ground</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="190"/>
+        <location filename="../../main.qml" line="193"/>
         <source>Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="195"/>
+        <location filename="../../main.qml" line="198"/>
         <source>Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="200"/>
+        <location filename="../../main.qml" line="203"/>
         <source>Slide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="205"/>
+        <location filename="../../main.qml" line="208"/>
         <source>Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="243"/>
+        <location filename="../../main.qml" line="229"/>
+        <source>Transparent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="254"/>
         <source>Single</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="404"/>
+        <location filename="../../main.qml" line="431"/>
         <source>preview running...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.qml" line="437"/>
+        <location filename="../../main.qml" line="466"/>
         <source>Are you sure you want to save?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="480"/>
+        <source>Please choose a color</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
