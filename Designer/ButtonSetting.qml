@@ -7,10 +7,12 @@ Rectangle{
     signal sigCancelClick()
     property int cmbWidth: 200
     property int btnWidth: 100
-    property var hoge: [{ foo: 203, bar: "power on", moo: qsTr("add")},
-                        { foo: 204, bar: "power off", moo: qsTr("edit")},
-                        { foo: 205, bar: "", moo: qsTr("up")},
-                        { foo: 206, bar: "", moo: qsTr("down")}]
+    property var hoge: [{ foo: 111101, bar: "NEC VP POWER ON"},
+                        { foo: 111102, bar: "NEC VP POWER OFF"},
+                        { foo: 111103, bar: "NEC VP MUTE ON"},
+                        { foo: 111104, bar: "NEC VP MUTE OFF"},
+                        { foo: 111105, bar: "NEC VP HDMI ON"},
+                        { foo: 111106, bar: "NEC VP HDMI OFF"}]
     Rectangle{
         anchors.left: parent.left
         anchors.bottom: parent.bottom
@@ -50,7 +52,7 @@ Rectangle{
                 width: 200
                 font.pointSize: 16
                 selectByMouse: true
-                text: ""
+                text: "power on"
             }
             Label{
                 font.pixelSize: 24;text: qsTr("Text Position")
@@ -65,20 +67,40 @@ Rectangle{
             Label{
                 font.pixelSize: 24; text: qsTr("Text Color")
             }
-            TextField {
-                width: 200
-                font.pointSize: 16
-                selectByMouse: true
-                text: ""
+            Rectangle{
+                height: 40
+                width: childrenRect.width
+                TextField {
+                    width: 160
+                    font.pointSize: 16
+                    selectByMouse: true
+                    text: "#FF0000"
+                }
+                Rectangle{
+                    anchors.right: parent.right
+                    width: parent.height
+                    height: width
+                    color: "#FF0000"
+                }
             }
             Label{
                 font.pixelSize: 24; text: qsTr("Button Source")
             }
-            TextField {
-                width: 200
-                font.pointSize: 16
-                selectByMouse: true
-                text: ""
+            Rectangle{
+                height: 40
+                width: childrenRect.width
+                TextField {
+                    width: 160
+                    font.pointSize: 16
+                    selectByMouse: true
+                    text: ""
+                }
+                Button{
+                    anchors.right: parent.right
+                    width: parent.height
+                    height: width
+                    text: "..."
+                }
             }
             Label{
                 font.pixelSize: 24;text: qsTr("Back Button Color")
@@ -110,52 +132,84 @@ Rectangle{
                     //console.log(currentIndex)
                 }
             }
+            Label{
+                font.pixelSize: 24; text: qsTr("Press Source")
+            }
+            Rectangle{
+                height: 40
+                width: childrenRect.width
+                TextField {
+                    width: 160
+                    font.pointSize: 16
+                    selectByMouse: true
+                    text: ""
+                }
+                Button{
+                    anchors.right: parent.right
+                    width: parent.height
+                    height: width
+                    text: "..."
+                }
+            }
         }
         Rectangle{
+            id: list
             anchors.top: main.top
             anchors.left: main.right
             anchors.leftMargin: 10
-            width: main.width
+            width: 200
             height: main.height
+            color: "white"
             GridLayout {
                 id: grid
-//                anchors.fill: parent
-                columns: 3
-                rowSpacing: 10
-                columnSpacing: 10
-                anchors.margins: 10
+                columns: 2
+                rowSpacing: 5
+                columnSpacing: 5
+                anchors.margins: 5
                 Repeater {
                     model: hoge
-                    Label {
+                    Text {
                         Layout.row: index
                         Layout.column: 0
-                        font.pointSize: 16
+                        font.pointSize: 12
                         text: modelData.foo
                     }
                 }
                 Repeater {
                     model: hoge
-                    TextField {
+                    Label {
                         Layout.row: index
                         Layout.column: 1
-                        width: 200
-                        font.pointSize: 16
-                        selectByMouse: true
+                        font.pointSize: 12
                         text: modelData.bar
-                    }
-                }
-                Repeater {
-                    model: hoge
-                    Button{
-                        Layout.row: index
-                        Layout.column: 2
-                        width: cmbWidth
-                        text: modelData.moo
                     }
                 }
             }
         }
-
+        Rectangle{
+            anchors.top: main.top
+            anchors.left: list.right
+            anchors.leftMargin: 10
+            ColumnLayout{
+                spacing: 10
+                Button {
+                    font.pixelSize: 24
+                    text: qsTr("add")
+                }
+                Button {
+                    font.pixelSize: 24
+                    text: qsTr("edit")
+                }
+                Button {
+                    font.pixelSize: 24
+                    text: qsTr("up")
+                }
+                Button {
+                    font.pixelSize: 24
+                    text: qsTr("down")
+                }
+            }
+        }
         Row{
             anchors.bottom: parent.bottom
             anchors.right: parent.right
