@@ -50,6 +50,18 @@
 	  				"cmd": ""
 	  			},
 	  			{
+	  				"id": 1,
+	  				"type": "radio",
+	  				"x": 10,
+	  				"y": 140,
+	  				"width": 80,
+	  				"height": 80,
+	  				"text": "RGB",
+	  				"textpos": 2,
+	  				"src": "qrc:/btngr_05.png",
+	  				"cmd": "{\"switch input\":\"RGB\"}"
+	  			},
+	  			{
 	  				"id": 2,
 	  				"type": "radio",
 	  				"x": 110,
@@ -78,7 +90,7 @@
 	  		],
 	  		"group":[
 	  			{
-	  				"id": 1,
+	  				"id": 4,
 	  				"type": "group",
 	  				"x": 0,
 	  				"y": 100,

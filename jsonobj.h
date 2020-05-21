@@ -16,7 +16,6 @@
 
 #define SLEEP(x) {QEventLoop loop; QTimer::singleShot(x, &loop, SLOT(quit())); loop.exec();}
 #define FILENAME_JSON "SynCVAS.json"
-#define OBJECT_LABEL "area01"
 
 class JsonObj : public QObject
 {
@@ -32,7 +31,7 @@ public:
 #endif
 		file.open(QFile::ReadWrite);
 		QTextStream in(&file);
-//		in.setCodec("UTF-8");
+        in.setCodec("UTF-8");
 		QJsonDocument jsonDoc = QJsonDocument::fromJson(in.readAll().toUtf8());
 		file.close();
 //		qDebug() << jsonDoc;
@@ -45,8 +44,14 @@ public:
 		}
 #endif
 		// ボタンオブジェクトの保存
-		QJsonArray arButton = jsonDoc.object().value(OBJECT_LABEL).toArray();
-		int idx = 0;
+        QJsonObject obArea = jsonDoc.object().value("area").toObject();
+        QJsonObject obPage = obArea.value("01").toObject();
+        QJsonArray arButton = obPage.value("button").toArray();
+        QJsonArray arGroup = obPage.value("group").toArray();
+        QJsonArray arText = obPage.value("text").toArray();
+        QJsonArray arSlider = obPage.value("slider").toArray();
+        int idx = 0;
+        // ボタン読出し
 		foreach(QJsonValue value, arButton){
 			qDebug() << "value = " << value.toObject();
 			m_stBtn[idx].id = value.toObject().value("id").toInt();
@@ -61,6 +66,51 @@ public:
 			m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
 			idx++;
 		}
+        // グループ読出し
+        foreach(QJsonValue value, arGroup){
+            qDebug() << "value = " << value.toObject();
+            m_stBtn[idx].id = value.toObject().value("id").toInt();
+            m_stBtn[idx].type = value.toObject().value("type").toString();
+            m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
+                                ,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
+            m_stBtn[idx].text = value.toObject().value("text").toString();
+            m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
+            m_stBtn[idx].image = value.toObject().value("image").toString();
+            m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
+            m_stBtn[idx].src = value.toObject().value("src").toString();
+            m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
+            idx++;
+        }
+        // ボタン読出し
+        foreach(QJsonValue value, arText){
+            qDebug() << "value = " << value.toObject();
+            m_stBtn[idx].id = value.toObject().value("id").toInt();
+            m_stBtn[idx].type = value.toObject().value("type").toString();
+            m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
+                                ,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
+            m_stBtn[idx].text = value.toObject().value("text").toString();
+            m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
+            m_stBtn[idx].image = value.toObject().value("image").toString();
+            m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
+            m_stBtn[idx].src = value.toObject().value("src").toString();
+            m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
+            idx++;
+        }
+        // スライダー読出し
+        foreach(QJsonValue value, arSlider){
+            qDebug() << "value = " << value.toObject();
+            m_stBtn[idx].id = value.toObject().value("id").toInt();
+            m_stBtn[idx].type = value.toObject().value("type").toString();
+            m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
+                                ,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
+            m_stBtn[idx].text = value.toObject().value("text").toString();
+            m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
+            m_stBtn[idx].image = value.toObject().value("image").toString();
+            m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
+            m_stBtn[idx].src = value.toObject().value("src").toString();
+            m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
+            idx++;
+        }
 		m_nObjCount = idx;
 		// マクロの保存（解析後回し）
 		m_arMacro = jsonDoc.object().value("macro").toArray();
