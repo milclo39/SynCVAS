@@ -13,7 +13,6 @@
 #include <QJsonArray>
 
 #define FILENAME_JSON "SynCVAS.json"
-#define OBJECT_LABEL "area01"
 
 class JsonObj : public QObject
 {
@@ -47,37 +46,92 @@ public:
 		QFile file(strFile);
 		file.open(QFile::ReadWrite);
 		QTextStream in(&file);
+        in.setCodec("UTF-8");
 		QJsonDocument jsonDoc = QJsonDocument::fromJson(in.readAll().toUtf8());
 		file.close();
-	
+//		qDebug() << jsonDoc;
 		QJsonObject obj = jsonDoc.object();
 		m_clJsonObj = obj;
 		QStringList keys = obj.keys();
+#if 0
 		foreach(QString key, keys){
 			qDebug() << "key = " << key;
 			qDebug() << "value = " << obj.value(key).toString();
 		}
-		QJsonArray array = jsonDoc.object().value(OBJECT_LABEL).toArray();
-		int idx = 0;
-		foreach(QJsonValue value, array){
-			qDebug() << "value = " << value.toObject();
-			m_stBtn[idx].id = value.toObject().value("id").toInt();
-			m_stBtn[idx].type = value.toObject().value("type").toString();
-			m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
-								,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
-			m_stBtn[idx].text = value.toObject().value("text").toString();
-			m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
-			m_stBtn[idx].image = value.toObject().value("image").toString();
-			m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
-			m_stBtn[idx].src = value.toObject().value("src").toString();
-			m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
-			idx++;
-		}
-		m_nObjCount = idx;
+#endif
+        // ボタンオブジェクトの保存
+        QJsonObject obArea = jsonDoc.object().value("area").toObject();
+        QJsonObject obPage = obArea.value("01").toObject();
+        QJsonArray arButton = obPage.value("button").toArray();
+        QJsonArray arGroup = obPage.value("group").toArray();
+        QJsonArray arText = obPage.value("text").toArray();
+        QJsonArray arSlider = obPage.value("slider").toArray();
+        int idx = 0;
+        // ボタン読出し
+        foreach(QJsonValue value, arButton){
+            qDebug() << "value = " << value.toObject();
+            m_stBtn[idx].id = value.toObject().value("id").toInt();
+            m_stBtn[idx].type = value.toObject().value("type").toString();
+            m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
+                                ,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
+            m_stBtn[idx].text = value.toObject().value("text").toString();
+            m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
+            m_stBtn[idx].image = value.toObject().value("image").toString();
+            m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
+            m_stBtn[idx].src = value.toObject().value("src").toString();
+            m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
+            idx++;
+        }
+        // グループ読出し
+        foreach(QJsonValue value, arGroup){
+            qDebug() << "value = " << value.toObject();
+            m_stBtn[idx].id = value.toObject().value("id").toInt();
+            m_stBtn[idx].type = value.toObject().value("type").toString();
+            m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
+                                ,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
+            m_stBtn[idx].text = value.toObject().value("text").toString();
+            m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
+            m_stBtn[idx].image = value.toObject().value("image").toString();
+            m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
+            m_stBtn[idx].src = value.toObject().value("src").toString();
+            m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
+            idx++;
+        }
+        // テキスト読出し
+        foreach(QJsonValue value, arText){
+            qDebug() << "value = " << value.toObject();
+            m_stBtn[idx].id = value.toObject().value("id").toInt();
+            m_stBtn[idx].type = value.toObject().value("type").toString();
+            m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
+                                ,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
+            m_stBtn[idx].text = value.toObject().value("text").toString();
+            m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
+            m_stBtn[idx].image = value.toObject().value("image").toString();
+            m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
+            m_stBtn[idx].src = value.toObject().value("src").toString();
+            m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
+            idx++;
+        }
+        // スライダー読出し
+        foreach(QJsonValue value, arSlider){
+            qDebug() << "value = " << value.toObject();
+            m_stBtn[idx].id = value.toObject().value("id").toInt();
+            m_stBtn[idx].type = value.toObject().value("type").toString();
+            m_stBtn[idx].rect.setRect(value.toObject().value("x").toInt(), value.toObject().value("y").toInt()
+                                ,value.toObject().value("width").toInt(), value.toObject().value("height").toInt());
+            m_stBtn[idx].text = value.toObject().value("text").toString();
+            m_stBtn[idx].textpos = value.toObject().value("textpos").toInt();
+            m_stBtn[idx].image = value.toObject().value("image").toString();
+            m_stBtn[idx].imagepos = value.toObject().value("imagepos").toInt();
+            m_stBtn[idx].src = value.toObject().value("src").toString();
+            m_stBtn[idx].cmd = value.toObject().value("cmd").toString();
+            idx++;
+        }
+        m_nObjCount = idx;
 	}
 	void writeJson(QString strFile)
 	{
-		QJsonArray array;
+        QJsonArray array1,array2,array3,array4;
 		for(int idx = 0; idx < m_nObjCount; idx++){
 			QJsonObject obj;
 			obj["id"] = m_stBtn[idx].id;
@@ -91,15 +145,34 @@ public:
 			obj["image"] = m_stBtn[idx].image;
 			obj["imagepos"] = m_stBtn[idx].imagepos;
 			obj["src"] = m_stBtn[idx].src;
-			obj["cmd"] = m_stBtn[idx].cmd;
-			array.append(obj);
-		}
-		m_clJsonObj[OBJECT_LABEL] = array;
-		QJsonDocument jsonDoc(m_clJsonObj);
+            obj["cmd"] = m_stBtn[idx].cmd;
+            if(obj["type"]=="group"){       // グループ
+                array2.append(obj);
+            }
+            else if(obj["type"]=="text"){    // テキスト
+                array3.append(obj);
+            }
+            else if(obj["type"]=="slider"){  // スライダー
+                array4.append(obj);
+            }
+            else{
+                array1.append(obj);
+            }
+        }
+        QJsonObject objTmpJson;
+        objTmpJson["button"] = array1;
+        objTmpJson["group"] = array2;
+        objTmpJson["text"] = array3;
+        objTmpJson["slider"] = array4;
+        QJsonObject objPage01Json;
+        objPage01Json["01"] = objTmpJson;
+        m_clJsonObj["area"] = objPage01Json;
+        QJsonDocument jsonDoc(m_clJsonObj);
 
 		QFile file(strFile);
 		file.open(QFile::WriteOnly);
 		QTextStream out(&file);
+        out.setCodec("UTF-8");
 		out << jsonDoc.toJson();
 		file.close();
 	}
